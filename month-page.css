@@ -1,0 +1,436 @@
+/* Estilos específicos para páginas de meses */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.month-page {
+    padding-top: 80px;
+}
+
+.month-hero {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+    color: white;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}.section-title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 auto 3rem;
+    text-align: center;
+    max-width: 800px;
+    display: block;
+}
+
+
+.month-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,0 1000,200 1000,1000 0,800"/></svg>');
+    background-size: cover;
+}
+
+.month-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+/* Estilos para o seletor de idioma */
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Aumentei o espaçamento entre os botões para combinar com a imagem */
+}
+
+/* Estilos para os botões de idioma */
+.lang-button {
+    background-color: #fff; /* Fundo branco para botões inativos */
+    border: 1px solid #ccc; /* Borda cinza clara para botões inativos */
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #404040; /* Cor do texto para botões inativos */
+    padding: 6px 16px; /* Ajuste para o formato oval */
+    border-radius: 20px; /* Borda arredondada para o formato oval */
+    transition: all 0.3s ease;
+}
+
+/* Efeito de hover para os botões */
+.lang-button:hover {
+    border-color: #999; /* Borda um pouco mais escura ao passar o mouse */
+    color: #000;
+}
+
+/* Estilos para o botão de idioma ativo */
+.lang-button.active {
+    background-color: #2161b9; /* Cor de fundo azul forte para o botão ativo */
+    color: #ffffff; /* Cor do texto para o botão ativo */
+    font-weight: 700;
+    border: 1px solid #2161b9; /* Borda da mesma cor do fundo para manter o tamanho */
+}
+.breadcrumb i {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.month-title {
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.month-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.month-stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Fish Section */
+.fish-section {
+    padding: 6rem 0;
+    background: var(--bg-secondary);
+}
+
+.section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.fish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.fish-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.fish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.fish-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.fish-card:hover .fish-image img {
+    transform: scale(1.05);
+}
+
+.fish-info {
+    padding: 2rem;
+}
+
+.fish-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.fish-scientific {
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.fish-details {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fish-size,
+.fish-period {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.fish-size i,
+.fish-period i {
+    color: var(--primary-color);
+}
+
+.fish-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Tips Section */
+.tips-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    background: white;
+}
+
+.tip-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.tip-card:hover .tip-icon {
+    transform: scale(1.1);
+}
+
+.tip-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.tip-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.tip-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Navigation between months */
+.month-navigation {
+    padding: 2rem 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: white;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    background: var(--primary-color);
+    color: white;
+}
+
+.nav-button.prev {
+    flex-direction: row;
+}
+
+.nav-button.next {
+    flex-direction: row-reverse;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .month-stats {
+        justify-content: center;
+    }
+    
+    .fish-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .fish-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Animações específicas */
+.fish-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.fish-card:nth-child(1) { animation-delay: 0.1s; }
+.fish-card:nth-child(2) { animation-delay: 0.2s; }
+.fish-card:nth-child(3) { animation-delay: 0.3s; }
+.fish-card:nth-child(4) { animation-delay: 0.4s; }
+
+.tip-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.tip-card:nth-child(1) { animation-delay: 0.1s; }
+.tip-card:nth-child(2) { animation-delay: 0.2s; }
+.tip-card:nth-child(3) { animation-delay: 0.3s; }
+.tip-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Estilo para diferentes meses */
+.month-hero.fevereiro {
+    background: linear-gradient(135deg, #007e7e 0%, #045d56 100%);
+}
+
+.month-hero.marco {
+    background: linear-gradient(135deg, #8a2387 0%, #e94057 100%);
+}
+
+.month-hero.abril {
+    background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+}
+
+.month-hero.maio {
+    background: linear-gradient(135deg, #3a1c71 0%, #d76d77 100%);
+}
+
+.month-hero.junho {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.month-hero.julho {
+    background: linear-gradient(135deg, #2e3c58 0%, #544a7d 100%);
+}
+
+.month-hero.agosto {
+    background: linear-gradient(135deg, #3f2b96 0%, #a8c0ff 100%);
+}
+
+.month-hero.setembro {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.month-hero.outubro {
+    background: linear-gradient(135deg, #42275a 0%, #734b6d 100%);
+}
+
+.month-hero.novembro {
+    background: linear-gradient(135deg, #4b1248 0%, #f0c27b 100%);
+}
+
+.month-hero.dezembro {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+}

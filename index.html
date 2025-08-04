@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatuInfo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Captura de tela 2025-06-24 221828-Photoroom (1).png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    <span>NatuInfo</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" data-lang-key="home_link">Início</a></li>
+                    <li><a href="#about" data-lang-key="about_link">Sobre</a></li>
+                    <li><a href="#months" data-lang-key="months_link">Períodos</a></li>
+                    <li><a href="#tips" data-lang-key="tips_link">Dicas</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="pt-BR">PT</button>
+                    <button class="lang-btn" data-lang="en">ENG</button>
+                    <button class="lang-btn" data-lang="es">ESP</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <g id="Cabeza" transform="matrix(1, 0, 0, 1, 0, 0)">
+          <path
+            style="fill: black; fill-opacity: 0.2"
+            d="M-28.9,-1.1L-28.55 -1.95Q-28.1 -3.1 -27.25 -2.95L-26.7 -2.95Q-27.7 -1.65 -28.9 -1.1M-18.35,-1.8Q-15.1 -10.3 -9.6 -6.05Q-15.1 -6.2 -18.35 -1.8M-18.35,1.1Q-15.1 5.45 -9.6 5.35Q-15.1 9.55 -18.35 1.1M-26.7,2.2L-27.25 2.25Q-28.1 2.4 -28.55 1.2L-28.9 0.35Q-27.7 0.9 -26.7 2.2"
+          />
+          <path
+            style="fill: black; fill-opacity: 1"
+            d="M-21.05,-8.25Q-13.6 -15.95 -1.3 -12.1Q-7.85 -8.5 -5.85 -4.35Q-2.3 -4.85 10.5 0.15Q0 4.35 -5.85 3.65Q-7.85 7.75 -1.25 12.45Q-13.6 15.2 -21.05 7.5Q-29.55 4.05 -30.2 -0.35Q-29.55 -4.8 -21.05 -8.25M-26.7,-2.95L-27.25 -2.95Q-28.1 -3.1 -28.55 -1.95L-28.9 -1.1Q-27.7 -1.65 -26.7 -2.95M-9.6,-6.05Q-15.1 -10.3 -18.35 -1.8Q-15.1 -6.2 -9.6 -6.05M-9.6,5.35Q-15.1 5.45 -18.35 1.1Q-15.1 9.55 -9.6 5.35M-28.9,0.35L-28.55 1.2Q-28.1 2.4 -27.25 2.25L-26.7 2.2Q-27.7 0.9 -28.9 0.35"
+          />
+          <path d="M-20 0 Q -10 -5 0 0" stroke="silver" stroke-width="0.5" fill="none"/>
+
+        </g>
+        <g id="Aletas" transform="matrix(1, 0, 0, 1, 0, 0)">
+          <linearGradient
+            id="LinearGradID_1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.0935974, 0, 0, 0.188782, -20.55, 0)"
+            spreadMethod="pad"
+            x1="-819.2"
+            y1="0"
+            x2="819.2"
+            y2="0"
+          >
+            <stop offset="0" style="stop-color: #A0A0A0; stop-opacity: 0.5" />
+            <stop offset="1" style="stop-color: #505050; stop-opacity: 0.5" />
+
+          </linearGradient>
+          <path
+            style="fill: url(#LinearGradID_1);"
+            d="M29.75,-36.85Q-17.75 -61.45 -42.05 -40.95L-45.35 -38.35L-53.7 -41.15L-51.15 -44.85Q-34.85 -68.4 21 -57.8Q-32.2 -72.1 -50.25 -50Q-53.85 -45.65 -56.05 -41.95L-64.7 -43.35L-60.6 -50.3Q-45.9 -75.55 5.1 -79.35Q-2.2 -79.8 -9.45 -79.15Q-16.2 -78.55 -22.85 -77.15Q-29.85 -75.65 -36.5 -73Q-43.05 -70.4 -48.8 -66.85Q-54.55 -63.35 -56.8 -60.3L-60.5 -55.4Q-62.95 -52.1 -67 -43.55L-70.55 -43.55L-76.35 -42.95Q-74.6 -49.1 -71.85 -54.85Q-68.9 -61.25 -64.8 -67.1Q-60.8 -73 -55.45 -77.55Q-49.9 -82.35 -43.65 -85.85L-30.6 -92.7Q-24.05 -95.95 -17 -98.25Q-63.75 -86.35 -73.65 -57.1Q-75.75 -50.75 -77.45 -42.75Q-82.9 -41.75 -88 -39.65Q-87.65 -46.65 -86.3 -53.05Q-79.8 -89.8 -36.65 -117.2Q-80.65 -94.5 -87.55 -59.55Q-88.65 -54.15 -88.95 -39.4L-89.8 -38.85L-92.7 -37.6Q-93.75 -44.35 -94.1 -51.15Q-94.4 -58.2 -93.25 -65.1Q-92.15 -72.5 -90.05 -79.65Q-88.05 -86.55 -85 -93Q-82.1 -99.3 -78.45 -105.15Q-74.6 -111.35 -70.25 -117.25Q-65.95 -123.1 -61.1 -128.55Q-70.3 -119.35 -77.9 -108.7Q-86 -97.3 -90.8 -84.05Q-95.8 -70.5 -96 -56.15Q-96.1 -46 -94.05 -36.05L-93.25 -31.55Q-93.5 -35.65 -92.35 -36Q-79.85 -42 -66.6 -40.45Q-52.45 -38.85 -39.2 -33.25Q-28.3 -29.9 -21.25 -24.15Q-17.8 -23.3 -8.6 -15.6Q-12.1 -20.75 -16.75 -24.5Q-24.55 -30.7 -34.25 -34.05L-42.55 -37Q-38.9 -41.25 -31.5 -43.25Q-24.05 -45.3 -16.2 -46.3Q-8.35 -47.35 -1 -46Q5.95 -44.75 12.75 -42.85Q19.85 -40.9 29.75 -36.85M-92.45,-27.35L-94.95 -36.25Q-109.7 -105 -27.95 -154.65Q-98.65 -103.8 -91.75 -39.4L-89.95 -40.2Q-92.2 -105.25 -5.6 -130.9Q-78.8 -99.95 -87.45 -40.9Q-83.15 -42.95 -78.45 -43.95Q-70 -101.3 17.65 -103.8Q-56.9 -93.4 -74.5 -44.55L-67.4 -45.45Q-49.1 -94.95 39.25 -75.65Q-36.75 -84.35 -62.25 -44.25L-57.3 -43.6Q-31.65 -86.5 56.15 -46.05Q-20.3 -73.35 -51.35 -41.7L-45.95 -39.75Q-17.85 -71.35 51.85 -24.8Q-8.7 -56.4 -39.75 -37.05Q-28.15 -34.05 -14.25 -24.45Q-8.6 -19.85 -5.8 -16.95Q5.95 -2.4 20 0Q5.95 2.4 -5.8 16.95Q-8.6 19.85 -14.25 24.45Q-28.15 34.05 -39.75 37.05Q-8.7 56.4 51.85 24.8Q-17.85 71.35 -45.95 39.75L-51.35 41.7Q-20.3 73.35 56.15 46.1Q-31.65 86.5 -57.3 43.65L-62.25 44.3Q-36.75 84.35 39.25 75.7Q-49.1 94.95 -67.4 45.5L-74.5 44.6Q-56.9 93.4 17.65 103.85Q-70 101.3 -78.45 43.95Q-83.15 42.95 -87.45 40.9Q-78.8 99.95 -5.6 130.9Q-92.2 105.25 -89.95 40.25L-91.75 39.4Q-98.65 103.8 -27.95 154.65Q-109.7 105 -94.95 36.3L-92.45 27.35Q-93.05 33.9 -92.05 34.75Q-91.1 35.55 -88.95 36.7L-87.95 37Q-83.7 38.25 -79.05 38.8L-77.25 38.95Q-72.55 39.3 -67.5 38.85L-65.45 38.65Q-44.4 36.05 -17.8 19.6Q-9.9 12.8 -15.15 4.4Q-18.15 3.15 -19 0Q-18.15 -3.15 -15.15 -4.4Q-9.9 -12.8 -17.8 -19.6L-17.8 -19.55Q-44.4 -36.05 -65.45 -38.6L-67.5 -38.8Q-72.55 -39.3 -77.25 -38.95L-79.05 -38.75Q-83.7 -38.25 -87.95 -36.95L-88.95 -36.65Q-91.1 -35.55 -92.05 -34.7Q-93.05 -33.9 -92.45 -27.35M-8.6,15.6Q-17.8 23.3 -21.25 24.2Q-28.3 29.9 -39.2 33.3Q-52.45 38.85 -66.6 40.5Q-79.85 42 -92.35 36Q-93.5 35.65 -93.25 31.55L-94.05 36.1Q-96.1 46.05 -96 56.15Q-95.8 70.5 -90.8 84.1Q-86 97.3 -77.9 108.75Q-70.3 119.35 -61.1 128.6Q-65.95 123.1 -70.25 117.25Q-74.6 111.35 -78.45 105.15Q-82.1 99.3 -85 93Q-88.05 86.55 -90.05 79.7Q-92.15 72.5 -93.25 65.1Q-94.4 58.2 -94.1 51.2Q-93.75 44.35 -92.7 37.6L-89.8 38.9L-88.95 39.45Q-88.65 54.15 -87.55 59.55Q-80.65 94.5 -36.65 117.25Q-79.8 89.8 -86.3 53.1Q-87.65 46.65 -88 39.65Q-82.9 41.75 -77.45 42.75Q-75.75 50.75 -73.65 57.15Q-63.75 86.35 -17 98.3Q-24.05 95.95 -30.6 92.75L-43.65 85.9Q-49.9 82.35 -55.45 77.6Q-60.8 73 -64.8 67.15Q-68.9 61.25 -71.85 54.85Q-74.6 49.1 -76.35 42.95L-70.55 43.6L-67 43.6Q-62.95 52.1 -60.5 55.4L-56.8 60.35Q-54.55 63.35 -48.8 66.9Q-43.05 70.4 -36.5 73Q-29.85 75.65 -22.85 77.15Q-16.2 78.55 -9.45 79.15Q-2.2 79.8 5.1 79.35Q-45.9 75.55 -60.6 50.3L-64.7 43.4L-56.05 41.95Q-53.85 45.65 -50.25 50Q-32.2 72.1 21 57.85Q-34.85 68.4 -51.15 44.85L-53.7 41.2L-45.35 38.35L-42.05 40.95Q-17.75 61.45 29.75 36.85Q19.85 40.9 12.75 42.9Q5.95 44.75 -1 46Q-8.35 47.35 -16.2 46.35Q-24.05 45.3 -31.5 43.3Q-38.9 41.25 -42.55 37.05L-34.25 34.05Q-24.55 30.7 -16.75 24.5Q-12.1 20.75 -8.6 15.6"
+          />
+       <g id="Espina" transform="matrix(0.5, 0, 0, 1, 0, 0)">
+          <linearGradient
+            id="LinearGradID_2"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.0229492, 0, 0, -0.0152893, 0, 0.05)"
+            spreadMethod="pad"
+            x1="-819.2"
+            y1="0"
+            x2="819.2"
+            y2="0"
+          >
+           <stop offset="1" style="stop-color: #404040; stop-opacity: 1" />
+
+          </linearGradient>
+          <path
+            style="fill: url(#LinearGradID_2)"
+            d="M-18.8,0Q-17.85 -5.7 -12.3 -9.6Q-11.2 -5.35 -6.5 -8.25L-6.45 -8.2L-6.2 -8.3Q1.25 -16.25 6.65 -12.4Q0.05 -12.55 0 -5.95Q2.7 -2.4 7.75 -4.1Q18 -1.45 18.8 0L-18.8 0"
+          />
+          <linearGradient
+            id="LinearGradID_3"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.0229492, 0, 0, 0.0152893, 0, -0.05)"
+            spreadMethod="pad"
+            x1="-819.2"
+            y1="0"
+            x2="819.2"
+            y2="0"
+          >
+            <stop offset="0" style="stop-color: #B0B0B0; stop-opacity: 1" />
+            <stop offset="1" style="stop-color: #404040; stop-opacity: 1" />
+
+          </linearGradient>
+          <path
+            style="fill: url(#LinearGradID_3)"
+            d="M18.8,0Q18 1.45 7.75 4.1Q2.7 2.4 0 5.95Q0.05 12.55 6.65 12.4Q1.25 16.25 -6.2 8.35Q-6.35 8.25 -6.45 8.25L-6.5 8.25Q-11.2 5.35 -12.3 9.6Q-17.85 5.7 -18.8 0L18.8 0"
+          />
+
+        </g>
+    </defs>
+    <g id="screen"></g>
+  </svg>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span data-lang-key="hero_title_part1">Pesca</span>
+                        <span class="highlight" data-lang-key="hero_title_part2">Predatória</span>
+                        <br>
+                        <span data-lang-key="hero_title_part3">Protegendo Nossos Recursos</span>
+                    </h1>
+                    <p class="hero-description" data-lang-key="hero_description">
+                        Entenda a importância dos períodos de defeso e como a pesca responsável 
+                        garante a sustentabilidade dos recursos pesqueiros para as futuras gerações.
+                    </p>
+                    <button class="cta-button" onclick="scrollToSection('about')">
+                        <i class="fas fa-arrow-down"></i>
+                        <span data-lang-key="cta_button">Saiba Mais</span>
+                    </button>
+                </div>
+                                              <div class="hero-image">
+            <div class="floating-card">
+                <i class="fas fa-fish"></i>
+                <span data-lang-key="protection_environmental">Proteção Ambiental</span>
+                 
+            </div>
+            </div>
+           
+        </section>
+     
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-lang-key="about_title">O que é Pesca Predatória?</h2>
+                    <p class="section-subtitle" data-lang-key="about_subtitle">
+                        Entenda os conceitos e a importância da pesca responsável
+                    </p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 data-lang-key="predatory_fishing">Pesca Predatória</h3>
+                        <p data-lang-key="predatory_fishing_desc">
+                            A pesca predatória é a captura de peixes durante seus períodos reprodutivos 
+                            ou quando estão abaixo do tamanho mínimo permitido. Esta prática ameaça 
+                            a sustentabilidade dos recursos pesqueiros.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-lang-key="defeso_period">Período de Defeso</h3>
+                        <p data-lang-key="defeso_period_desc">
+                            É o período em que a pesca de determinadas espécies é proibida para 
+                            garantir sua reprodução. Cada espécie tem seu período específico, 
+                            geralmente durante a época reprodutiva.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 data-lang-key="sustainability">Sustentabilidade</h3>
+                        <p data-lang-key="sustainability_desc">
+                            A pesca responsável garante que as espécies se reproduzam adequadamente, 
+                            mantendo o equilíbrio dos ecossistemas aquáticos e garantindo recursos 
+                            para as futuras gerações.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="months" class="months">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-lang-key="months_title">Períodos de Defeso por Mês</h2>
+                    <p class="section-subtitle" data-lang-key="months_subtitle">
+                        Clique em cada mês para ver os peixes em período de defeso
+                    </p>
+                </div>
+                
+                <div class="months-grid" id="monthsGrid">
+                    <!-- Os cards dos meses serão gerados via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="tips">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-lang-key="tips_title">Dicas para Pesca Responsável</h2>
+                    <p class="section-subtitle" data-lang-key="tips_subtitle">
+                        Práticas essenciais para uma pesca sustentável
+                    </p>
+                </div>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-number">01</div>
+                        <h3 data-lang-key="tip1_title">Conheça os Períodos</h3>
+                        <p data-lang-key="tip1_desc">Sempre verifique os períodos de defeso das espécies antes de pescar. O calendário varia por região e espécie.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-number">02</div>
+                        <h3 data-lang-key="tip2_title">Respeite os Tamanhos</h3>
+                        <p data-lang-key="tip2_desc">Solte peixes que estejam abaixo do tamanho mínimo permitido. Isso garante que alcancem a maturidade sexual.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-number">03</div>
+                        <h3 data-lang-key="tip3_title">Use Equipamentos Adequados</h3>
+                        <p data-lang-key="tip3_desc">Utilize equipamentos que causem menos impacto ao ambiente e permitam a soltura segura dos peixes.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-number">04</div>
+                        <h3 data-lang-key="tip4_title">Pratique Pesque e Solte</h3>
+                        <p data-lang-key="tip4_desc">Quando possível, pratique o pesque e solte, especialmente com espécies em recuperação populacional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-fish"></i>
+                        <span>NatuInfo</span>
+                    </div>
+                    <p data-lang-key="footer_description">Protegendo os recursos pesqueiros para as futuras gerações.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang-key="footer_links">Links Úteis</h4>
+                    <ul>
+                        <li><a href="#home" data-lang-key="home_link">Início</a></li>
+                        <li><a href="#about" data-lang-key="about_link">Sobre</a></li>
+                        <li><a href="#months" data-lang-key="months_link">Períodos</a></li>
+                        <li><a href="#tips" data-lang-key="tips_link">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang-key="footer_contact">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> <span data-lang-key="email">natuinfo@gmail.com</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-lang-key="phone">(27) 999-9999</span></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-lang-key="copyright">&copy; 2024 NatuInfo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script src="script2.js"></script>
+    <script>
+        // Translation dictionary
+        const translations = {
+            "pt-BR": {
+                "hero_title_part1": "Pesca",
+                "hero_title_part2": "Predatória",
+                "hero_title_part3": "Protegendo Nossos Recursos",
+                "hero_description": "Entenda a importância dos períodos de defeso e como a pesca responsável garante a sustentabilidade dos recursos pesqueiros para as futuras gerações.",
+                "cta_button": "Saiba Mais",
+                "protection_environmental": "Proteção Ambiental",
+                "about_title": "O que é Pesca Predatória?",
+                "about_subtitle": "Entenda os conceitos e a importância da pesca responsável",
+                "predatory_fishing": "Pesca Predatória",
+                "predatory_fishing_desc": "A pesca predatória é a captura de peixes durante seus períodos reprodutivos ou quando estão abaixo do tamanho mínimo permitido. Esta prática ameaça a sustentabilidade dos recursos pesqueiros.",
+                "defeso_period": "Período de Defeso",
+                "defeso_period_desc": "É o período em que a pesca de determinadas espécies é proibida para garantir sua reprodução. Cada espécie tem seu período específico, geralmente durante a época reprodutiva.",
+                "sustainability": "Sustentabilidade",
+                "sustainability_desc": "A pesca responsável garante que as espécies se reproduzam adequadamente, mantendo o equilíbrio dos ecossistemas aquáticos e garantindo recursos para as futuras gerações.",
+                "months_title": "Períodos de Defeso por Mês",
+                "months_subtitle": "Clique em cada mês para ver os peixes em período de defeso",
+                "tips_title": "Dicas para Pesca Responsável",
+                "tips_subtitle": "Práticas essenciais para uma pesca sustentável",
+                "tip1_title": "Conheça os Períodos",
+                "tip1_desc": "Sempre verifique os períodos de defeso das espécies antes de pescar. O calendário varia por região e espécie.",
+                "tip2_title": "Respeite os Tamanhos",
+                "tip2_desc": "Solte peixes que estejam abaixo do tamanho mínimo permitido. Isso garante que alcancem a maturidade sexual.",
+                "tip3_title": "Use Equipamentos Adequados",
+                "tip3_desc": "Utilize equipamentos que causem menos impacto ao ambiente e permitam a soltura segura dos peixes.",
+                "tip4_title": "Pratique Pesque e Solte",
+                "tip4_desc": "Quando possível, pratique o pesque e solte, especialmente com espécies em recuperação populacional.",
+                "footer_description": "Protegendo os recursos pesqueiros para as futuras gerações.",
+                "footer_links": "Links Úteis",
+                "home_link": "Início",
+                "about_link": "Sobre",
+                "months_link": "Períodos",
+                "tips_link": "Dicas",
+                "footer_contact": "Contato",
+                "email": "natuinfo@gmail.com",
+                "phone": "(27) 99762-3605",
+                "copyright": "&copy; 2024 NatuInfo. Todos os direitos reservados."
+            },
+            "en": {
+                "hero_title_part1": "Fishing",
+                "hero_title_part2": "Predatory",
+                "hero_title_part3": "Protecting Our Resources",
+                "hero_description": "Understand the importance of protection periods and how responsible fishing guarantees the sustainability of fish resources for future generations.",
+                "cta_button": "Learn More",
+                "protection_environmental": "Environmental Protection",
+                "about_title": "What is Predatory Fishing?",
+                "about_subtitle": "Understand concepts and the importance of responsible fishing",
+                "predatory_fishing": "Predatory Fishing",
+                "predatory_fishing_desc": "Predatory fishing is the capture of fish during their reproductive periods or when they are below the minimum size allowed. This practice threatens the sustainability of fish resources.",
+                "defeso_period": "Protection Period",
+                "defeso_period_desc": "It is the period when fishing for certain species is prohibited to ensure their reproduction. Each species has its specific period, usually during the breeding season.",
+                "sustainability": "Sustainability",
+                "sustainability_desc": "Responsible fishing ensures that species reproduce adequately, maintaining the balance of aquatic ecosystems and guaranteeing resources for future generations.",
+                "months_title": "Protection Periods by Month",
+                "months_subtitle": "Click on each month to see fish in protection period",
+                "tips_title": "Tips for Responsible Fishing",
+                "tips_subtitle": "Essential practices for sustainable fishing",
+                "tip1_title": "Know the Periods",
+                "tip1_desc": "Always check the protection periods of species before fishing. The calendar varies by region and species.",
+                "tip2_title": "Respect Sizes",
+                "tip2_desc": "Release fish that are below the minimum size allowed. This ensures they reach sexual maturity.",
+                "tip3_title": "Use Appropriate Equipment",
+                "tip3_desc": "Use equipment that causes less environmental impact and allows safe release of fish.",
+                "tip4_title": "Practice Catch and Release",
+                "tip4_desc": "When possible, practice catch and release, especially with species in population recovery.",
+                "footer_description": "Protecting fish resources for future generations.",
+                "footer_links": "Useful Links",
+                "home_link": "Home",
+                "about_link": "About",
+                "months_link": "Periods",
+                "tips_link": "Tips",
+                "footer_contact": "Contact",
+                "email": "natuinfo@gmail.com",
+                "phone": "(27) 99762-3605",
+                "copyright": "&copy; 2024 NatuInfo. All rights reserved."
+            },
+            "es": {
+                "hero_title_part1": "Pesca",
+                "hero_title_part2": "Depredadora",
+                "hero_title_part3": "Protegiendo Nuestros Recursos",
+                "hero_description": "Entienda la importancia de los períodos de protección y cómo la pesca responsable garantiza la sostenibilidad de los recursos pesqueros para las futuras generaciones.",
+                "cta_button": "Saber Más",
+                "protection_environmental": "Protección Ambiental",
+                "about_title": "¿Qué es la Pesca Depredadora?",
+                "about_subtitle": "Entienda los conceptos y la importancia de la pesca responsable",
+                "predatory_fishing": "Pesca Depredadora",
+                "predatory_fishing_desc": "La pesca depredadora es la captura de peces durante sus períodos reproductivos o cuando están por debajo del tamaño mínimo permitido. Esta práctica amenaza la sostenibilidad de los recursos pesqueros.",
+                "defeso_period": "Período de Protección",
+                "defeso_period_desc": "Es el período en que se prohíbe la pesca de ciertas especies para garantizar su reproducción. Cada especie tiene su período específico, generalmente durante la temporada de reproducción.",
+                "sustainability": "Sostenibilidad",
+                "sustainability_desc": "La pesca responsable garantiza que las especies se reproduzcan adecuadamente, manteniendo el equilibrio de los ecosistemas acuáticos y garantizando recursos para las futuras generaciones.",
+                "months_title": "Períodos de Protección por Mes",
+                "months_subtitle": "Haz clic en cada mes para ver los peces en período de protección",
+                "tips_title": "Consejos para la Pesca Responsable",
+                "tips_subtitle": "Prácticas esenciales para una pesca sostenible",
+                "tip1_title": "Conoce los Períodos",
+                "tip1_desc": "Siempre verifica los períodos de protección de las especies antes de pescar. El calendario varía por región y especie.",
+                "tip2_title": "Respeta los Tamanhos",
+                "tip2_desc": "Libera peces que estén por debajo del tamaño mínimo permitido. Esto garantiza que alcancen la madurez sexual.",
+                "tip3_title": "Usa Equipos Adecuados",
+                "tip3_desc": "Utiliza equipos que causen menos impacto al medio ambiente y permitan la liberación segura de los peces.",
+                "tip4_title": "Practica Captura y Liberación",
+                "tip4_desc": "Cuando sea posible, practica la captura y liberación, especialmente con especies en recuperación poblacional.",
+                "footer_description": "Protegiendo los recursos pesqueros para las futuras generaciones.",
+                "footer_links": "Enlaces Útiles",
+                "home_link": "Inicio",
+                "about_link": "Acerca de",
+                "months_link": "Períodos",
+                "tips_link": "Consejos",
+                "footer_contact": "Contacto",
+                "email": "natuinfo@gmail.com",
+                "phone": "(27) 99762-3605",
+                "copyright": "&copy; 2024 NatuInfo. Todos los derechos reservados."
+            }
+        };
+
+        // Months data with explicit Portuguese fields
+        const monthsData = [
+            {
+                name_pt_br: "Janeiro",
+                season_pt_br: "Verão",
+                name_en: "January",
+                season_en: "Summer",
+                name_es: "Enero",
+                season_es: "Verano",
+                file: "janeiro.html",
+                gradient: "linear-gradient(135deg, #c31432, #240b36)"
+            },
+            {
+                name_pt_br: "Fevereiro",
+                season_pt_br: "Verão",
+                name_en: "February",
+                season_en: "Summer",
+                name_es: "Febrero",
+                season_es: "Verano",
+                file: "fevereiro.html",
+                gradient: "linear-gradient(135deg, #007e7e, #045d56)"
+            },
+            {
+                name_pt_br: "Março",
+                season_pt_br: "Outono",
+                name_en: "March",
+                season_en: "Autumn",
+                name_es: "Marzo",
+                season_es: "Otoño",
+                file: "marco.html",
+                gradient: "linear-gradient(135deg, #8a2387, #e94057)"
+            },
+            {
+                name_pt_br: "Abril",
+                season_pt_br: "Outono",
+                name_en: "April",
+                season_en: "Autumn",
+                name_es: "Abril",
+                season_es: "Otoño",
+                file: "abril.html",
+                gradient: "linear-gradient(135deg, #1a2980, #26d0ce)"
+            },
+            {
+                name_pt_br: "Maio",
+                season_pt_br: "Outono",
+                name_en: "May",
+                season_en: "Autumn",
+                name_es: "Mayo",
+                season_es: "Otoño",
+                file: "maio.html",
+                gradient: "linear-gradient(135deg, #3a1c71, #d76d77)"
+            },
+            {
+                name_pt_br: "Junho",
+                season_pt_br: "Inverno",
+                name_en: "June",
+                season_en: "Winter",
+                name_es: "Junio",
+                season_es: "Invierno",
+                file: "junho.html",
+                gradient: "linear-gradient(135deg, #0f2027, #203a43, #2c5364)"
+            },
+            {
+                name_pt_br: "Julho",
+                season_pt_br: "Inverno",
+                name_en: "July",
+                season_en: "Winter",
+                name_es: "Julio",
+                season_es: "Invierno",
+                file: "julho.html",
+                gradient: "linear-gradient(135deg, #2e3c58, #544a7d)"
+            },
+            {
+                name_pt_br: "Agosto",
+                season_pt_br: "Inverno",
+                name_en: "August",
+                season_en: "Winter",
+                name_es: "Agosto",
+                season_es: "Invierno",
+                file: "agosto.html",
+                gradient: "linear-gradient(135deg, #3f2b96, #a8c0ff)"
+            },
+            {
+                name_pt_br: "Setembro",
+                season_pt_br: "Primavera",
+                name_en: "September",
+                season_en: "Spring",
+                name_es: "Septiembre",
+                season_es: "Primavera",
+                file: "setembro.html",
+                gradient: "linear-gradient(135deg, #1e3c72, #2a5298)"
+            },
+            {
+                name_pt_br: "Outubro",
+                season_pt_br: "Primavera",
+                name_en: "October",
+                season_en: "Spring",
+                name_es: "Octubre",
+                season_es: "Primavera",
+                file: "outubro.html",
+                gradient: "linear-gradient(135deg, #42275a, #734b6d)"
+            },
+            {
+                name_pt_br: "Novembro",
+                season_pt_br: "Primavera",
+                name_en: "November",
+                season_en: "Spring",
+                name_es: "Noviembre",
+                season_es: "Primavera",
+                file: "novembro.html",
+                gradient: "linear-gradient(135deg, #4b1248, #f0c27b)"
+            },
+            {
+                name_pt_br: "Dezembro",
+                season_pt_br: "Verão",
+                name_en: "December",
+                season_en: "Summer",
+                name_es: "Diciembre",
+                season_es: "Verano",
+                file: "dezembro.html",
+                gradient: "linear-gradient(135deg, #232526, #414345)"
+            }
+        ];
+
+        let currentLanguage = 'pt-BR';
+
+        // DOM elements
+        const langButtons = document.querySelectorAll('.lang-btn');
+        const langKeys = document.querySelectorAll('[data-lang-key]');
+
+        // Function to update language
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update active button
+            langButtons.forEach(btn => {
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            // Update text content
+            langKeys.forEach(element => {
+                const key = element.dataset.langKey;
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update navigation links
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                const key = link.dataset.langKey;
+                if (key && translations[lang] && translations[lang][key]) {
+                    link.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update hero title parts
+            const heroTitleParts = [
+                document.querySelector('.hero-title').children[0],
+                document.querySelector('.hero-title').children[1],
+                document.querySelector('.hero-title').children[2]
+            ];
+            
+            if (heroTitleParts[0]) {
+                heroTitleParts[0].textContent = translations[lang]["hero_title_part1"];
+            }
+            if (heroTitleParts[1]) {
+                heroTitleParts[1].textContent = translations[lang]["hero_title_part2"];
+            }
+            if (heroTitleParts[2]) {
+                heroTitleParts[2].textContent = translations[lang]["hero_title_part3"];
+            }
+            
+            // Refresh month cards with new language
+            generateMonthCards();
+            
+            // Save language preference
+            localStorage.setItem('language', lang);
+        }
+
+        // Function to generate month cards with proper language support
+        function generateMonthCards() {
+            const monthsGrid = document.getElementById('monthsGrid');
+            monthsGrid.innerHTML = ''; // Clear existing content
+            
+            // Get current language from localStorage or default to pt-BR
+            const currentLang = localStorage.getItem('language') || 'pt-BR';
+            
+            monthsData.forEach((month, index) => {
+                const card = document.createElement('div');
+                card.className = 'month-card';
+                card.style.background = month.gradient;
+                card.style.animationDelay = `${index * 0.1}s`;
+                
+                // Select the appropriate name and season based on current language
+                let displayName, displaySeason;
+                if (currentLang === 'en') {
+                    displayName = month.name_en;
+                    displaySeason = month.season_en;
+                } else if (currentLang === 'es') {
+                    displayName = month.name_es;
+                    displaySeason = month.season_es;
+                } else {
+                    displayName = month.name_pt_br;
+                    displaySeason = month.season_pt_br;
+                }
+                
+                card.innerHTML = `
+                    <h3>${displayName}</h3>
+                    <p>${displaySeason}</p>
+                `;
+                
+                card.addEventListener('click', () => {
+                    window.location.href = month.file;
+                });
+                monthsGrid.appendChild(card);
+            });
+        }
+
+        // Initialize language from localStorage or default to pt-BR
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            const savedLang = localStorage.getItem('language');
+            if (savedLang && translations[savedLang]) {
+                changeLanguage(savedLang);
+            } else {
+                // Set default language to Portuguese
+                changeLanguage('pt-BR');
+            }
+            
+            // Add event listeners to language buttons
+            langButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    changeLanguage(button.dataset.lang);
+                });
+            });
+        });
+
+        // Add CSS for language switcher
+        const style = document.createElement('style');
+        style.textContent = `
+            .language-switcher {
+                display: flex;
+                gap: 0.5rem;
+            }
+            
+            .lang-btn {
+                background: var(--bg-secondary);
+                border: 1px solid var(--border-color);
+                padding: 0.5rem 1rem;
+                border-radius: 20px;
+                cursor: pointer;
+                font-weight: 500;
+                transition: all 0.3s ease;
+            }
+            
+            .lang-btn.active {
+                background: var(--primary-color);
+                color: white;
+                border-color: var(--primary-color);
+            }
+            
+            .lang-btn:hover:not(.active) {
+                background: var(--bg-primary);
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Função para scroll suave
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Função para animação de entrada dos elementos
+        function animateOnScroll() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            // Observar elementos que devem ser animados
+            const animatedElements = document.querySelectorAll('.about-card, .month-card, .tip-card');
+            animatedElements.forEach(el => observer.observe(el));
+        }
+
+        // Função para adicionar efeito parallax ao hero
+        function initParallax() {
+            const hero = document.querySelector('.hero');
+            const heroContent = document.querySelector('.hero-content');
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const parallaxSpeed = 0.5;
+                if (heroContent) {
+                    heroContent.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+                }
+            });
+        }
+
+        // Função para navbar responsiva
+        function initNavbar() {
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        }
+
+        // Função para adicionar efeito de hover nos cards
+        function initCardEffects() {
+            const cards = document.querySelectorAll('.about-card, .tip-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        }
+
+        // Função para adicionar efeito de ripple nos botões
+        function initRippleEffect() {
+            const buttons = document.querySelectorAll('.cta-button, .month-card');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const rect = this.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const ripple = document.createElement('span');
+                    ripple.className = 'ripple';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    this.appendChild(ripple);
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        }
+
+        // Função para adicionar CSS do ripple
+        function addRippleCSS() {
+            const style = document.createElement('style');
+            style.textContent = `
+                .ripple {
+                    position: absolute;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.3);
+                    transform: scale(0);
+                    animation: ripple-animation 0.6s linear;
+                    pointer-events: none;
+                }
+                @keyframes ripple-animation {
+                    to {
+                        transform: scale(4);
+                        opacity: 0;
+                    }
+                }
+                .month-card, .cta-button {
+                    position: relative;
+                    overflow: hidden;
+                }
+                .navbar.scrolled {
+                    background: rgba(255, 255, 255, 0.98);
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        // Função para inicializar contador animado
+        function initCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                const updateCounter = () => {
+                    const current = parseInt(counter.innerText);
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + increment);
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+
+        // Função para adicionar loading animation
+        function showLoading() {
+            const loading = document.createElement('div');
+            loading.className = 'loading';
+            loading.innerHTML = `
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Carregando...</p>
+                </div>
+            `;
+            document.body.appendChild(loading);
+            setTimeout(() => {
+                loading.remove();
+            }, 1500);
+        }
+
+        // Função para adicionar CSS do loading
+        function addLoadingCSS() {
+            const style = document.createElement('style');
+            style.textContent = `
+                .loading {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.9);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 10000;
+                }
+                .loading-spinner {
+                    text-align: center;
+                }
+                .spinner {
+                    width: 40px;
+                    height: 40px;
+                    border: 4px solid #f3f3f3;
+                    border-top: 4px solid var(--primary-color);
+                    border-radius: 50%;
+                    animation: spin 1s linear infinite;
+                    margin: 0 auto 1rem;
+                }
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        // Inicialização quando o DOM estiver carregado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mostrar loading
+            addLoadingCSS();
+            showLoading();
+            
+            // Initialize with current language
+            const savedLang = localStorage.getItem('language');
+            if (savedLang && translations[savedLang]) {
+                changeLanguage(savedLang);
+            } else {
+                changeLanguage('pt-BR');
+            }
+            
+            // Initialize other functionalities
+            setTimeout(() => {
+                animateOnScroll();
+                initParallax();
+                initNavbar();
+                initCardEffects();
+                addRippleCSS();
+                initRippleEffect();
+                initCounters();
+            }, 100);
+        });
+
+        // Adicionar smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+   
+</body>
+</html>

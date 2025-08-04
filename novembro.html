@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Novembro - Períodos de Defeso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="month-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Captura de tela 2025-06-24 221828-Photoroom (1).png" type="image/x-icon">
+
+    <style>
+        /* CSS para os botões de idioma */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-btn.active {
+            background-color: #007bff; /* Cor azul para o botão ativo */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    <span data-translate="logo">Pesca Responsável</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav-home">Início</a></li>
+                    <li><a href="index.html#about" data-translate="nav-about">Sobre</a></li>
+                    <li><a href="index.html#months" data-translate="nav-periods">Períodos</a></li>
+                    <li><a href="index.html#tips" data-translate="nav-tips">Dicas</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="en">ENG</button>
+                            <button class="lang-btn" data-lang="es">ESP</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="month-page">
+        <section class="month-hero novembro">
+            <div class="month-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html" data-translate="breadcrumb-home">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-translate="breadcrumb-month">Novembro</span>
+                </div>
+                <h1 class="month-title" data-translate="month-title">Novembro</h1>
+                <p class="month-subtitle" data-translate="month-subtitle">Primavera • Início do grande defeso</p>
+                <div class="month-stats">
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label" data-translate="stats-species">Espécies em defeso</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">25°C</div>
+                        <div class="stat-label" data-translate="stats-temp">Temperatura média</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fish-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="fish-section-title">Peixes em Período de Defeso</h2>
+                
+                <div class="fish-grid">
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/1200x/6d/bd/75/6dbd75b38c69aeacfc2cdcd4f7bdfc09.jpg" alt="Dourado do mar">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-dourado">Dourado do mar</h3>
+                            <p class="fish-scientific">Coryphaena hippurus</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-dourado">60cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-dourado">Sem defeso fixo</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-dourado">
+                                O dourado-do-mar (Coryphaena hippurus) não possui período de defeso estabelecido em âmbito nacional, devido à sua natureza migratória e oceânica. No entanto, é recomendado respeitar o tamanho mínimo de 60 cm para preservar a reprodução da espécie. A pesca sustentável e a soltura de exemplares menores são práticas incentivadas para manter o equilíbrio dos oceanos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/736x/e6/70/8c/e6708c963458d125fe40aa69b2532d3c.jpg" alt="Pargo">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-pargo">Pargo</h3>
+                            <p class="fish-scientific">Lutjanus cyanopterus</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-pargo">40cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-pargo">Jan - Fev</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-pargo">
+                                O pargo (Lutjanus cyanopterus), também conhecido como pargo-vermelho ou pargo-real, é um peixe de recife muito procurado na pesca artesanal e esportiva. Embora o defeso nacional para a espécie seja em outros períodos, algumas regulamentações locais podem impor restrições. O tamanho mínimo permitido de captura é de 40 cm.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/736x/ba/9f/97/ba9f97249f06aca9d0ed23145283494d.jpg" alt="Robalo">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-robalo">Robalo</h3>
+                            <p class="fish-scientific">Centropomus undecimalis</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-robalo">50cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-robalo">Out - Dez</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-robalo">
+                                O robalo (Centropomus undecimalis), conhecido como robalo-peixe ou robalo-flecha, é uma espécie muito valorizada na pesca esportiva e comercial. Seu período de defeso ocorre entre outubro e dezembro na maioria dos estados brasileiros, época de desova. É obrigatório respeitar o tamanho mínimo de 50 cm para captura.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="tips-section-title">Dicas para Novembro</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <h3 data-translate="tip-title-1">Início do Defeso</h3>
+                        <p data-translate="tip-text-1">Novembro marca o início do grande período de defeso para muitas espécies de água doce.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3 data-translate="tip-title-2">Rotas Migratórias</h3>
+                        <p data-translate="tip-text-2">Evite pescar em rios e lagos que são rotas migratórias conhecidas das espécies em defeso.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <h3 data-translate="tip-title-3">Espécies Alternativas</h3>
+                        <p data-translate="tip-text-3">Concentre-se em espécies não migratórias de água doce como tucunaré e traíra, que podem estar liberadas.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <h3 data-translate="tip-title-4">Início das Chuvas</h3>
+                        <p data-translate="tip-text-4">Novembro marca o início das chuvas, que favorecem a reprodução. Respeite as áreas de piracema.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-fish"></i>
+                        <span data-translate="footer-logo">Pesca Responsável</span>
+                    </div>
+                    <p data-translate="footer-motto">Protegendo os recursos pesqueiros para as futuras gerações.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-links-title">Links Úteis</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="footer-link-home">Início</a></li>
+                        <li><a href="index.html#about" data-translate="footer-link-about">Sobre</a></li>
+                        <li><a href="index.html#months" data-translate="footer-link-periods">Períodos</a></li>
+                        <li><a href="index.html#tips" data-translate="footer-link-tips">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-contact-title">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> info@pescaresponsavel.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2024 Pesca Responsável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pt: {
+                "title": "Novembro - Períodos de Defeso",
+                "logo": "Pesca Responsável",
+                "nav-home": "Início",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Dicas",
+                "breadcrumb-home": "Início",
+                "breadcrumb-month": "Novembro",
+                "month-title": "Novembro",
+                "month-subtitle": "Primavera • Início do grande defeso",
+                "stats-species": "Espécies em defeso",
+                "stats-temp": "Temperatura média",
+                "fish-section-title": "Peixes em Período de Defeso",
+                "fish-name-dourado": "Dourado do mar",
+                "size-dourado": "60cm mín.",
+                "period-dourado": "Sem defeso fixo",
+                "description-dourado": "O dourado-do-mar (Coryphaena hippurus) não possui período de defeso estabelecido em âmbito nacional, devido à sua natureza migratória e oceânica. No entanto, é recomendado respeitar o tamanho mínimo de 60 cm para preservar a reprodução da espécie. A pesca sustentável e a soltura de exemplares menores são práticas incentivadas para manter o equilíbrio dos oceanos.",
+                "fish-name-pargo": "Pargo",
+                "size-pargo": "40cm mín.",
+                "period-pargo": "Jan - Fev",
+                "description-pargo": "O pargo (Lutjanus cyanopterus), também conhecido como pargo-vermelho ou pargo-real, é um peixe de recife muito procurado na pesca artesanal e esportiva. Embora o defeso nacional para a espécie seja em outros períodos, algumas regulamentações locais podem impor restrições. O tamanho mínimo permitido de captura é de 40 cm.",
+                "fish-name-robalo": "Robalo",
+                "size-robalo": "50cm mín.",
+                "period-robalo": "Out - Dez",
+                "description-robalo": "O robalo (Centropomus undecimalis), conhecido como robalo-peixe ou robalo-flecha, é uma espécie muito valorizada na pesca esportiva e comercial. Seu período de defeso ocorre entre outubro e dezembro na maioria dos estados brasileiros, época de desova. É obrigatório respeitar o tamanho mínimo de 50 cm para captura.",
+                "tips-section-title": "Dicas para Novembro",
+                "tip-title-1": "Início do Defeso",
+                "tip-text-1": "Novembro marca o início do grande período de defeso para muitas espécies de água doce.",
+                "tip-title-2": "Rotas Migratórias",
+                "tip-text-2": "Evite pescar em rios e lagos que são rotas migratórias conhecidas das espécies em defeso.",
+                "tip-title-3": "Espécies Alternativas",
+                "tip-text-3": "Concentre-se em espécies não migratórias de água doce como tucunaré e traíra, que podem estar liberadas.",
+                "tip-title-4": "Início das Chuvas",
+                "tip-text-4": "Novembro marca o início das chuvas, que favorecem a reprodução. Respeite as áreas de piracema.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegendo os recursos pesqueiros para as futuras gerações.",
+                "footer-links-title": "Links Úteis",
+                "footer-link-home": "Início",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Dicas",
+                "footer-contact-title": "Contato",
+                "footer-copyright": "&copy; 2024 Pesca Responsável. Todos os direitos reservados."
+            },
+            en: {
+                "title": "November - Closed Season",
+                "logo": "Responsible Fishing",
+                "nav-home": "Home",
+                "nav-about": "About",
+                "nav-periods": "Seasons",
+                "nav-tips": "Tips",
+                "breadcrumb-home": "Home",
+                "breadcrumb-month": "November",
+                "month-title": "November",
+                "month-subtitle": "Spring • Start of the major closed season",
+                "stats-species": "Species in closed season",
+                "stats-temp": "Average temperature",
+                "fish-section-title": "Fish in Closed Season",
+                "fish-name-dourado": "Mahi-mahi",
+                "size-dourado": "60cm min.",
+                "period-dourado": "No fixed closed season",
+                "description-dourado": "The mahi-mahi (Coryphaena hippurus) has no established national closed season due to its migratory and oceanic nature. However, it is recommended to respect the minimum size of 60 cm to preserve the reproduction of the species. Sustainable fishing and the release of smaller specimens are practices encouraged to maintain ocean balance.",
+                "fish-name-pargo": "Pargo",
+                "size-pargo": "40cm min.",
+                "period-pargo": "Jan - Feb",
+                "description-pargo": "The Pargo (Lutjanus cyanopterus), also known as red snapper, is a reef fish highly sought after in artisanal and sport fishing. Although the national closed season for the species is during other periods, some local regulations may impose restrictions. The minimum allowed catch size is 40 cm.",
+                "fish-name-robalo": "Snook",
+                "size-robalo": "50cm min.",
+                "period-robalo": "Oct - Dec",
+                "description-robalo": "The snook (Centropomus undecimalis), is a highly valued species in sport and commercial fishing. Its closed season occurs between October and December in most Brazilian states, which is its spawning season. It is mandatory to respect the minimum catch size of 50 cm.",
+                "tips-section-title": "Tips for November",
+                "tip-title-1": "Start of Closed Season",
+                "tip-text-1": "November marks the beginning of the major closed season for many freshwater species.",
+                "tip-title-2": "Migratory Routes",
+                "tip-text-2": "Avoid fishing in rivers and lakes that are known migratory routes for species in closed season.",
+                "tip-title-3": "Alternative Species",
+                "tip-text-3": "Focus on non-migratory freshwater species like peacock bass and trahira, which may be allowed.",
+                "tip-title-4": "Start of Rains",
+                "tip-text-4": "November marks the start of the rainy season, which favors reproduction. Respect the 'piracema' areas.",
+                "footer-logo": "Responsible Fishing",
+                "footer-motto": "Protecting fisheries resources for future generations.",
+                "footer-links-title": "Useful Links",
+                "footer-link-home": "Home",
+                "footer-link-about": "About",
+                "footer-link-periods": "Seasons",
+                "footer-link-tips": "Tips",
+                "footer-contact-title": "Contact",
+                "footer-copyright": "&copy; 2024 Responsible Fishing. All rights reserved."
+            },
+            es: {
+                "title": "Noviembre - Períodos de Veda",
+                "logo": "Pesca Responsable",
+                "nav-home": "Inicio",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Consejos",
+                "breadcrumb-home": "Inicio",
+                "breadcrumb-month": "Noviembre",
+                "month-title": "Noviembre",
+                "month-subtitle": "Primavera • Inicio de la gran veda",
+                "stats-species": "Especies en veda",
+                "stats-temp": "Temperatura media",
+                "fish-section-title": "Peces en Período de Veda",
+                "fish-name-dourado": "Dorado",
+                "size-dourado": "60cm mín.",
+                "period-dourado": "Sin veda fija",
+                "description-dourado": "El dorado (Coryphaena hippurus) no tiene un período de veda establecido a nivel nacional debido a su naturaleza migratoria y oceánica. Sin embargo, se recomienda respetar el tamaño mínimo de 60 cm para preservar la reproducción de la especie. La pesca sostenible y la liberación de ejemplares más pequeños son prácticas incentivadas para mantener el equilibrio de los océanos.",
+                "fish-name-pargo": "Pargo",
+                "size-pargo": "40cm mín.",
+                "period-pargo": "Ene - Feb",
+                "description-pargo": "El pargo (Lutjanus cyanopterus), también conocido como pargo rojo, es un pez de arrecife muy buscado en la pesca artesanal y deportiva. Aunque la veda nacional para la especie es en otros períodos, algunas regulaciones locales pueden imponer restricciones. El tamaño mínimo de captura permitido es de 40 cm.",
+                "fish-name-robalo": "Robalo",
+                "size-robalo": "50cm mín.",
+                "period-robalo": "Oct - Dic",
+                "description-robalo": "El robalo (Centropomus undecimalis), es una especie muy valorada en la pesca deportiva y comercial. Su período de veda ocurre entre octubre y diciembre en la mayoría de los estados brasileños, época de desove. Es obligatorio respetar el tamaño mínimo de 50 cm para la captura.",
+                "tips-section-title": "Consejos para Noviembre",
+                "tip-title-1": "Inicio de la Veda",
+                "tip-text-1": "Noviembre marca el comienzo del gran período de veda para muchas especies de agua dulce.",
+                "tip-title-2": "Rutas Migratorias",
+                "tip-text-2": "Evite pescar en ríos y lagos que son rutas migratorias conocidas para las especies en veda.",
+                "tip-title-3": "Especies Alternativas",
+                "tip-text-3": "Concéntrese en especies de agua dulce no migratorias como el tucunaré y la traíra, que pueden estar permitidas.",
+                "tip-title-4": "Inicio de las Lluvias",
+                "tip-text-4": "Noviembre marca el inicio de la temporada de lluvias, que favorece la reproducción. Respete las áreas de 'piracema'.",
+                "footer-logo": "Pesca Responsable",
+                "footer-motto": "Protegiendo los recursos pesqueros para las futuras generaciones.",
+                "footer-links-title": "Enlaces Útiles",
+                "footer-link-home": "Inicio",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Consejos",
+                "footer-contact-title": "Contacto",
+                "footer-copyright": "&copy; 2024 Pesca Responsable. Todos los derechos reservados."
+            }
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                langButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const newLang = button.getAttribute('data-lang');
+                document.documentElement.lang = newLang;
+
+                const langData = translations[newLang];
+
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (langData[key]) {
+                        element.innerHTML = langData[key];
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

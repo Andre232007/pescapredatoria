@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Março - Períodos de Defeso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="month-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Captura de tela 2025-06-24 221828-Photoroom (1).png" type="image/x-icon">
+
+    <style>
+        /* CSS para os botões de idioma */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-btn.active {
+            background-color: #007bff; /* Cor azul para o botão ativo */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    <span data-translate="logo">Pesca Responsável</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav-home">Início</a></li>
+                    <li><a href="index.html#about" data-translate="nav-about">Sobre</a></li>
+                    <li><a href="index.html#months" data-translate="nav-periods">Períodos</a></li>
+                    <li><a href="index.html#tips" data-translate="nav-tips">Dicas</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="en">ENG</button>
+                            <button class="lang-btn" data-lang="es">ESP</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="month-page">
+        <section class="month-hero marco">
+            <div class="month-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html" data-translate="breadcrumb-home">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-translate="breadcrumb-month">Março</span>
+                </div>
+                <h1 class="month-title" data-translate="month-title">Março</h1>
+                <p class="month-subtitle" data-translate="month-subtitle">Outono • Retorno de algumas espécies</p>
+                <div class="month-stats">
+                    <div class="stat">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label" data-translate="stats-species">Espécies em defeso</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24°C</div>
+                        <div class="stat-label" data-translate="stats-temp">Temperatura média</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fish-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="fish-section-title">Peixes em Período de Defeso</h2>
+                <div class="fish-grid">
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/1200x/c3/7c/94/c37c94ea0cd50304da362f079dedd578.jpg" alt="Anchova">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-anchova">Anchova</h3>
+                            <p class="fish-scientific">Pomatomus saltatrix</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-anchova">40cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-anchova">Dez - Mai</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-anchova">
+                                A anchova (Pomatomus saltatrix) é um peixe costeiro carnívoro, muito visado na pesca esportiva e comercial. Seu período de defeso ocorre entre 15 de novembro e 15 de fevereiro em diversas regiões do Brasil, quando se reproduz próximo à costa. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/1200x/e4/41/d2/e441d2fb8a3a5a81a7f7d59f61caf5b7.jpg" alt="Gurijuba">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-gurijuba">Gurijuba</h3>
+                            <p class="fish-scientific">Sciades herzbergii</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-gurijuba">60cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-gurijuba">Dez - Mar</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-gurijuba">
+                                A gurijuba (Sciades herzbergii), também conhecida como bagre-da-amazônia, é típica de estuários e águas salobras da costa norte do Brasil. Seu período de defeso vai de 1º de dezembro a 30 de abril, abrangendo o pico reprodutivo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://st3.depositphotos.com/1818950/36535/i/450/depositphotos_365353668-stock-photo-deep-sea-fishing-catch-fish.jpg" alt="Pargo-vermelho">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-pargo">Pargo-vermelho</h3>
+                            <p class="fish-scientific">Lutjanus purpureus</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-pargo">30cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-pargo">Nov - Mar</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-pargo">
+                                O pargo-vermelho (Lutjanus purpureus) é um peixe de águas profundas muito apreciado comercialmente. O período de defeso ocorre de 1º de dezembro a 28 de fevereiro, abrangendo a época de reprodução nas regiões Norte e Nordeste.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="tips-section-title">Dicas para Março</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-unlock"></i>
+                        </div>
+                        <h3 data-translate="tip-title-1">Liberação Gradual</h3>
+                        <p data-translate="tip-text-1">Algumas espécies voltam a ser liberadas. Verifique as datas específicas de cada região.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-thermometer-three-quarters"></i>
+                        </div>
+                        <h3 data-translate="tip-title-2">Temperatura Ideal</h3>
+                        <p data-translate="tip-text-2">Com temperaturas mais amenas, os peixes ficam mais ativos durante o dia todo.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 data-translate="tip-title-3">Explore Novos Locais</h3>
+                        <p data-translate="tip-text-3">Março é ideal para explorar diferentes pesqueiros e técnicas de pesca.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 data-translate="tip-title-4">Respeite Cotas</h3>
+                        <p data-translate="tip-text-4">Mesmo com espécies liberadas, sempre respeite as cotas de captura estabelecidas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-fish"></i>
+                        <span data-translate="footer-logo">Pesca Responsável</span>
+                    </div>
+                    <p data-translate="footer-motto">Protegendo os recursos pesqueiros para as futuras gerações.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-links-title">Links Úteis</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="footer-link-home">Início</a></li>
+                        <li><a href="index.html#about" data-translate="footer-link-about">Sobre</a></li>
+                        <li><a href="index.html#months" data-translate="footer-link-periods">Períodos</a></li>
+                        <li><a href="index.html#tips" data-translate="footer-link-tips">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-contact-title">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> info@pescaresponsavel.com</p>
+                    <p><i class="fas fa-phone"></i> (27) 99762-3605</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2024 Pesca Responsável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pt: {
+                "title": "Março - Períodos de Defeso",
+                "logo": "Pesca Responsável",
+                "nav-home": "Início",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Dicas",
+                "breadcrumb-home": "Início",
+                "breadcrumb-month": "Março",
+                "month-title": "Março",
+                "month-subtitle": "Outono • Retorno de algumas espécies",
+                "stats-species": "Espécies em defeso",
+                "stats-temp": "Temperatura média",
+                "fish-section-title": "Peixes em Período de Defeso",
+                "description-março": "Março é um mês de transição, onde algumas espécies saem do período de defeso e outras permanecem. A pesca consciente continua sendo a chave.",
+                "fish-name-anchova": "Anchova",
+                "size-anchova": "40cm mín.",
+                "period-anchova": "Dez - Mai",
+                "description-anchova": "A anchova (Pomatomus saltatrix) é um peixe costeiro carnívoro, muito visado na pesca esportiva e comercial. Seu período de defeso ocorre entre 15 de novembro e 15 de fevereiro em diversas regiões do Brasil, quando se reproduz próximo à costa.",
+                "fish-name-gurijuba": "Gurijuba",
+                "size-gurijuba": "60cm mín.",
+                "period-gurijuba": "Dez - Mar",
+                "description-gurijuba": "A gurijuba (Sciades herzbergii), também conhecida como bagre-da-amazônia, é típica de estuários e águas salobras da costa norte do Brasil. Seu período de defeso vai de 1º de dezembro a 30 de abril, abrangendo o pico reprodutivo.",
+                "fish-name-pargo": "Pargo-vermelho",
+                "size-pargo": "30cm mín.",
+                "period-pargo": "Nov - Mar",
+                "description-pargo": "O pargo-vermelho (Lutjanus purpureus) é um peixe de águas profundas muito apreciado comercialmente. O período de defeso ocorre de 1º de dezembro a 28 de fevereiro, abrangendo a época de reprodução nas regiões Norte e Nordeste.",
+                "tips-section-title": "Dicas para Março",
+                "tip-title-1": "Liberação Gradual",
+                "tip-text-1": "Algumas espécies voltam a ser liberadas. Verifique as datas específicas de cada região.",
+                "tip-title-2": "Temperatura Ideal",
+                "tip-text-2": "Com temperaturas mais amenas, os peixes ficam mais ativos durante o dia todo.",
+                "tip-title-3": "Explore Novos Locais",
+                "tip-text-3": "Março é ideal para explorar diferentes pesqueiros e técnicas de pesca.",
+                "tip-title-4": "Respeite Cotas",
+                "tip-text-4": "Mesmo com espécies liberadas, sempre respeite as cotas de captura estabelecidas.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegendo os recursos pesqueiros para as futuras gerações.",
+                "footer-links-title": "Links Úteis",
+                "footer-link-home": "Início",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Dicas",
+                "footer-contact-title": "Contato",
+                "footer-copyright": "&copy; 2024 Pesca Responsável. Todos os direitos reservados."
+            },
+            en: {
+                "title": "March - Closed Season",
+                "logo": "Responsible Fishing",
+                "nav-home": "Home",
+                "nav-about": "About",
+                "nav-periods": "Seasons",
+                "nav-tips": "Tips",
+                "breadcrumb-home": "Home",
+                "breadcrumb-month": "March",
+                "month-title": "March",
+                "month-subtitle": "Autumn • Return of some species",
+                "stats-species": "Species in closed season",
+                "stats-temp": "Average temperature",
+                "fish-section-title": "Fish in Closed Season",
+                "description-março": "March is a transitional month, where some species leave the closed season and others remain. Conscious fishing continues to be key.",
+                "fish-name-anchova": "Bluefish",
+                "size-anchova": "40cm min.",
+                "period-anchova": "Dec - May",
+                "description-anchova": "The bluefish (Pomatomus saltatrix) is a carnivorous coastal fish, popular in sport and commercial fishing. Its closed season occurs between November 15 and February 15 in several regions of Brazil, when it reproduces near the coast.",
+                "fish-name-gurijuba": "Gurijuba",
+                "size-gurijuba": "60cm min.",
+                "period-gurijuba": "Dec - Mar",
+                "description-gurijuba": "The gurijuba (Sciades herzbergii), also known as Amazon catfish, is typical of estuaries and brackish waters of the northern Brazilian coast. Its closed season runs from December 1st to April 30th, covering the reproductive peak.",
+                "fish-name-pargo": "Red Snapper",
+                "size-pargo": "30cm min.",
+                "period-pargo": "Nov - Mar",
+                "description-pargo": "The red snapper (Lutjanus purpureus) is a deep-water fish highly valued commercially. The closed season occurs from December 1st to February 28th, covering the breeding season in the North and Northeast regions.",
+                "tips-section-title": "Tips for March",
+                "tip-title-1": "Gradual Release",
+                "tip-text-1": "Some species are released again. Check specific dates for each region.",
+                "tip-title-2": "Ideal Temperature",
+                "tip-text-2": "With milder temperatures, fish become more active throughout the day.",
+                "tip-title-3": "Explore New Locations",
+                "tip-text-3": "March is ideal for exploring different fishing spots and techniques.",
+                "tip-title-4": "Respect Quotas",
+                "tip-text-4": "Even with released species, always respect the established catch quotas.",
+                "footer-logo": "Responsible Fishing",
+                "footer-motto": "Protecting fisheries resources for future generations.",
+                "footer-links-title": "Useful Links",
+                "footer-link-home": "Home",
+                "footer-link-about": "About",
+                "footer-link-periods": "Seasons",
+                "footer-link-tips": "Tips",
+                "footer-contact-title": "Contact",
+                "footer-copyright": "&copy; 2024 Responsible Fishing. All rights reserved."
+            },
+            es: {
+                "title": "Marzo - Períodos de Veda",
+                "logo": "Pesca Responsable",
+                "nav-home": "Inicio",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Consejos",
+                "breadcrumb-home": "Inicio",
+                "breadcrumb-month": "Marzo",
+                "month-title": "Marzo",
+                "month-subtitle": "Otoño • Retorno de algunas especies",
+                "stats-species": "Especies en veda",
+                "stats-temp": "Temperatura media",
+                "fish-section-title": "Peces en Período de Veda",
+                "description-março": "Marzo es un mes de transición, donde algunas especies salen del período de veda y otras permanecen. La pesca consciente sigue siendo clave.",
+                "fish-name-anchova": "Anjova",
+                "size-anchova": "40cm mín.",
+                "period-anchova": "Dic - May",
+                "description-anchova": "La anjova (Pomatomus saltatrix) es un pez costero carnívoro, muy popular en la pesca deportiva y comercial. Su período de veda ocurre entre el 15 de noviembre y el 15 de febrero en varias regiones de Brasil, cuando se reproduce cerca de la costa.",
+                "fish-name-gurijuba": "Gurijuba",
+                "size-gurijuba": "60cm mín.",
+                "period-gurijuba": "Dic - Mar",
+                "description-gurijuba": "La gurijuba (Sciades herzbergii), también conocida como bagre del Amazonas, es típica de estuarios y aguas salobres de la costa norte de Brasil. Su período de veda va del 1 de diciembre al 30 de abril, cubriendo el pico reproductivo.",
+                "fish-name-pargo": "Pargo Rojo",
+                "size-pargo": "30cm mín.",
+                "period-pargo": "Nov - Mar",
+                "description-pargo": "El pargo rojo (Lutjanus purpureus) es un pez de aguas profundas muy apreciado comercialmente. El período de veda ocurre del 1 de diciembre al 28 de febrero, cubriendo la temporada de reproducción en las regiones Norte y Noreste.",
+                "tips-section-title": "Consejos para Marzo",
+                "tip-title-1": "Liberación Gradual",
+                "tip-text-1": "Algunas especies son liberadas nuevamente. Verifique las fechas específicas para cada región.",
+                "tip-title-2": "Temperatura Ideal",
+                "tip-text-2": "Con temperaturas más suaves, los peces se vuelven más activos durante todo el día.",
+                "tip-title-3": "Explore Nuevas Ubicaciones",
+                "tip-text-3": "Marzo es ideal para explorar diferentes lugares de pesca y técnicas de pesca.",
+                "tip-title-4": "Respete las Cuotas",
+                "tip-text-4": "Incluso con especies liberadas, siempre respete las cuotas de captura establecidas.",
+                "footer-logo": "Pesca Responsable",
+                "footer-motto": "Protegiendo los recursos pesqueros para las futuras generaciones.",
+                "footer-links-title": "Enlaces Útiles",
+                "footer-link-home": "Inicio",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Consejos",
+                "footer-contact-title": "Contacto",
+                "footer-copyright": "&copy; 2024 Pesca Responsable. Todos los derechos reservados."
+            }
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                langButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const newLang = button.getAttribute('data-lang');
+                document.documentElement.lang = newLang;
+
+                const langData = translations[newLang];
+
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (langData[key]) {
+                        element.innerHTML = langData[key];
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

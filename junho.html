@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Junho - Períodos de Defeso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="month-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Captura de tela 2025-06-24 221828-Photoroom (1).png" type="image/x-icon">
+
+    <style>
+        /* CSS para os botões de idioma */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-btn.active {
+            background-color: #007bff; /* Cor azul para o botão ativo */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    <span data-translate="logo">Pesca Responsável</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav-home">Início</a></li>
+                    <li><a href="index.html#about" data-translate="nav-about">Sobre</a></li>
+                    <li><a href="index.html#months" data-translate="nav-periods">Períodos</a></li>
+                    <li><a href="index.html#tips" data-translate="nav-tips">Dicas</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="en">ENG</button>
+                            <button class="lang-btn" data-lang="es">ESP</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="month-page">
+        <section class="month-hero junho">
+            <div class="month-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html" data-translate="breadcrumb-home">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-translate="breadcrumb-month">Junho</span>
+                </div>
+                <h1 class="month-title" data-translate="month-title">Junho</h1>
+                <p class="month-subtitle" data-translate="month-subtitle">Inverno • Final do defeso do tucunaré</p>
+                <div class="month-stats">
+                    <div class="stat">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label" data-translate="stats-species">Espécies em defeso</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">18°C</div>
+                        <div class="stat-label" data-translate="stats-temp">Temperatura média</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fish-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="fish-section-title">Peixes em Período de Defeso</h2>
+              
+                
+                <div class="fish-grid">
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/736x/b6/5c/bf/b65cbf568a6e06e5c14521d2058ccf48.jpg" alt="Tucunaré">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-tucunare">Tucunaré</h3>
+                            <p class="fish-scientific">Cichla spp.</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-tucunare">40cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-tucunare">Out - Jun</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-tucunare">
+                                O tucunaré (Cichla spp.) tem seu período de defeso encerrado em junho. Esta espécie, conhecida por sua pesca esportiva, cuida ativamente dos filhotes. A pesca é liberada, mas com respeito aos ninhos e alevinos ainda presentes em algumas áreas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/1200x/08/89/95/088995992c8c8f40c0518645aca5b436.jpg" alt="Trairão">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-trairao">Trairão</h3>
+                            <p class="fish-scientific">Hoplias lacerdae</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-trairao">50cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-trairao">Dez - Jun</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-trairao">
+                                Assim como o tucunaré, o trairão (Hoplias lacerdae) encerra seu período de defeso em junho. Ele também protege sua prole, então a pesca deve ser cautelosa para não prejudicar a reprodução. A liberação permite a pesca responsável, respeitando os limites e tamanhos mínimos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="tips-section-title">Dicas para Junho</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <h3 data-translate="tip-title-1">Liberação Completa</h3>
+                        <p data-translate="tip-text-1">Final do defeso para tucunaré e trairão. Todas as principais espécies liberadas.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h3 data-translate="tip-title-2">Pesca de Inverno</h3>
+                        <p data-translate="tip-text-2">Temperaturas mais baixas exigem estratégias específicas de pesca.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 data-translate="tip-title-3">Horários Estratégicos</h3>
+                        <p data-translate="tip-text-3">Prefira pescar nas horas mais quentes do dia durante o inverno.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 data-translate="tip-title-4">Águas Profundas</h3>
+                        <p data-translate="tip-text-4">Peixes tendem a buscar águas mais profundas durante o inverno.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-fish"></i>
+                        <span data-translate="footer-logo">Pesca Responsável</span>
+                    </div>
+                    <p data-translate="footer-motto">Protegendo os recursos pesqueiros para as futuras gerações.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-links-title">Links Úteis</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="footer-link-home">Início</a></li>
+                        <li><a href="index.html#about" data-translate="footer-link-about">Sobre</a></li>
+                        <li><a href="index.html#months" data-translate="footer-link-periods">Períodos</a></li>
+                        <li><a href="index.html#tips" data-translate="footer-link-tips">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-contact-title">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> info@pescaresponsavel.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2024 Pesca Responsável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pt: {
+                "title": "Junho - Períodos de Defeso",
+                "logo": "Pesca Responsável",
+                "nav-home": "Início",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Dicas",
+                "breadcrumb-home": "Início",
+                "breadcrumb-month": "Junho",
+                "month-title": "Junho",
+                "month-subtitle": "Inverno • Final do defeso do tucunaré",
+                "stats-species": "Espécies em defeso",
+                "stats-temp": "Temperatura média",
+                "fish-section-title": "Peixes em Período de Defeso",
+                "section-description": "Junho marca o final do defeso do tucunaré e trairão, encerrando os principais períodos reprodutivos das espécies que cuidam da prole.",
+                "fish-name-tucunare": "Tucunaré",
+                "size-tucunare": "40cm mín.",
+                "period-tucunare": "Out - Jun",
+                "description-tucunare": "O tucunaré (Cichla spp.) tem seu período de defeso encerrado em junho. Esta espécie, conhecida por sua pesca esportiva, cuida ativamente dos filhotes. A pesca é liberada, mas com respeito aos ninhos e alevinos ainda presentes em algumas áreas.",
+                "fish-name-trairao": "Trairão",
+                "size-trairao": "50cm mín.",
+                "period-trairao": "Dez - Jun",
+                "description-trairao": "Assim como o tucunaré, o trairão (Hoplias lacerdae) encerra seu período de defeso em junho. Ele também protege sua prole, então a pesca deve ser cautelosa para não prejudicar a reprodução. A liberação permite a pesca responsável, respeitando os limites e tamanhos mínimos.",
+                "tips-section-title": "Dicas para Junho",
+                "tip-title-1": "Liberação Completa",
+                "tip-text-1": "Final do defeso para tucunaré e trairão. Todas as principais espécies liberadas.",
+                "tip-title-2": "Pesca de Inverno",
+                "tip-text-2": "Temperaturas mais baixas exigem estratégias específicas de pesca.",
+                "tip-title-3": "Horários Estratégicos",
+                "tip-text-3": "Prefira pescar nas horas mais quentes do dia durante o inverno.",
+                "tip-title-4": "Águas Profundas",
+                "tip-text-4": "Peixes tendem a buscar águas mais profundas durante o inverno.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegendo os recursos pesqueiros para as futuras gerações.",
+                "footer-links-title": "Links Úteis",
+                "footer-link-home": "Início",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Dicas",
+                "footer-contact-title": "Contato",
+                "footer-copyright": "&copy; 2024 Pesca Responsável. Todos os direitos reservados."
+            },
+            en: {
+                "title": "June - Closed Season",
+                "logo": "Responsible Fishing",
+                "nav-home": "Home",
+                "nav-about": "About",
+                "nav-periods": "Seasons",
+                "nav-tips": "Tips",
+                "breadcrumb-home": "Home",
+                "breadcrumb-month": "June",
+                "month-title": "June",
+                "month-subtitle": "Winter • End of peacock bass closed season",
+                "stats-species": "Species in closed season",
+                "stats-temp": "Average temperature",
+                "fish-section-title": "Fish in Closed Season",
+                "section-description": "June marks the end of the closed season for peacock bass and wolf fish, concluding the main reproductive periods for species that care for their young.",
+                "fish-name-tucunare": "Peacock Bass",
+                "size-tucunare": "40cm min.",
+                "period-tucunare": "Oct - Jun",
+                "description-tucunare": "The peacock bass (Cichla spp.) has its closed season ending in June. This species, known for sport fishing, actively cares for its young. Fishing is released, but with respect to nests and fry still present in some areas.",
+                "fish-name-trairao": "Wolf Fish",
+                "size-trairao": "50cm min.",
+                "period-trairao": "Dec - Jun",
+                "description-trairao": "Like the peacock bass, the wolf fish (Hoplias lacerdae) ends its closed season in June. It also protects its young, so fishing must be cautious to avoid harming reproduction. The release allows for responsible fishing, respecting limits and minimum sizes.",
+                "tips-section-title": "Tips for June",
+                "tip-title-1": "Full Release",
+                "tip-text-1": "End of closed season for peacock bass and wolf fish. All major species are released.",
+                "tip-title-2": "Winter Fishing",
+                "tip-text-2": "Lower temperatures require specific fishing strategies.",
+                "tip-title-3": "Strategic Times",
+                "tip-text-3": "Prefer to fish during the warmest hours of the day in winter.",
+                "tip-title-4": "Deeper Waters",
+                "tip-text-4": "Fish tend to seek deeper waters during the winter.",
+                "footer-logo": "Responsible Fishing",
+                "footer-motto": "Protecting fisheries resources for future generations.",
+                "footer-links-title": "Useful Links",
+                "footer-link-home": "Home",
+                "footer-link-about": "About",
+                "footer-link-periods": "Seasons",
+                "footer-link-tips": "Tips",
+                "footer-contact-title": "Contact",
+                "footer-copyright": "&copy; 2024 Responsible Fishing. All rights reserved."
+            },
+            es: {
+                "title": "Junio - Períodos de Veda",
+                "logo": "Pesca Responsable",
+                "nav-home": "Inicio",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Consejos",
+                "breadcrumb-home": "Inicio",
+                "breadcrumb-month": "Junio",
+                "month-title": "Junio",
+                "month-subtitle": "Invierno • Fin de la veda del tucunaré",
+                "stats-species": "Especies en veda",
+                "stats-temp": "Temperatura media",
+                "fish-section-title": "Peces en Período de Veda",
+                "section-description": "Junio marca el final de la veda del tucunaré y trairão, concluyendo los principales períodos reproductivos de las especies que cuidan a su descendencia.",
+                "fish-name-tucunare": "Tucunaré",
+                "size-tucunare": "40cm mín.",
+                "period-tucunare": "Oct - Jun",
+                "description-tucunare": "El tucunaré (Cichla spp.) termina su período de veda en junio. Esta especie, conocida por su pesca deportiva, cuida activamente de sus crías. La pesca está liberada, pero con respeto a los nidos y alevines todavía presentes en algunas zonas.",
+                "fish-name-trairao": "Trairão",
+                "size-trairao": "50cm mín.",
+                "period-trairao": "Dec - Jun",
+                "description-trairao": "Al igual que el tucunaré, el trairão (Hoplias lacerdae) finaliza su período de veda en junio. También protege a su descendencia, por lo que la pesca debe ser cautelosa para no perjudicar la reproducción. La liberación permite una pesca responsable, respetando los límites y tamaños mínimos.",
+                "tips-section-title": "Consejos para Junio",
+                "tip-title-1": "Liberación Completa",
+                "tip-text-1": "Fin de la veda para tucunaré y trairão. Todas las principales especies liberadas.",
+                "tip-title-2": "Pesca de Invierno",
+                "tip-text-2": "Temperaturas más bajas exigen estrategias específicas de pesca.",
+                "tip-title-3": "Horarios Estratégicos",
+                "tip-text-3": "Prefiera pescar en las horas más cálidas del día durante el invierno.",
+                "tip-title-4": "Aguas Profundas",
+                "tip-text-4": "Los peces tienden a buscar aguas más profundas durante el invierno.",
+                "footer-logo": "Pesca Responsable",
+                "footer-motto": "Protegiendo los recursos pesqueros para las futuras generaciones.",
+                "footer-links-title": "Enlaces Útiles",
+                "footer-link-home": "Inicio",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Consejos",
+                "footer-contact-title": "Contacto",
+                "footer-copyright": "&copy; 2024 Pesca Responsable. Todos los derechos reservados."
+            }
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                langButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const newLang = button.getAttribute('data-lang');
+                document.documentElement.lang = newLang;
+
+                const langData = translations[newLang];
+
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (langData[key]) {
+                        element.innerHTML = langData[key];
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

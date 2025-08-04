@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Maio - Períodos de Defeso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="month-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Captura de tela 2025-06-24 221828-Photoroom (1).png" type="image/x-icon">
+
+    <style>
+        /* CSS para os botões de idioma */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-btn.active {
+            background-color: #007bff; /* Cor azul para o botão ativo */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    <span data-translate="logo">Pesca Responsável</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav-home">Início</a></li>
+                    <li><a href="index.html#about" data-translate="nav-about">Sobre</a></li>
+                    <li><a href="index.html#months" data-translate="nav-periods">Períodos</a></li>
+                    <li><a href="index.html#tips" data-translate="nav-tips">Dicas</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="en">ENG</button>
+                            <button class="lang-btn" data-lang="es">ESP</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="month-page">
+        <section class="month-hero maio">
+            <div class="month-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html" data-translate="breadcrumb-home">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-translate="breadcrumb-month">Maio</span>
+                </div>
+                <h1 class="month-title" data-translate="month-title">Maio</h1>
+                <p class="month-subtitle" data-translate="month-subtitle">Outono • Fim do defeso do pirarucu</p>
+                <div class="month-stats">
+                    <div class="stat">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label" data-translate="stats-species">Espécies em defeso</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">20°C</div>
+                        <div class="stat-label" data-translate="stats-temp">Temperatura média</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fish-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="fish-section-title">Peixes em Período de Defeso</h2>
+                <div class="fish-grid">
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/1200x/6d/bd/75/6dbd75b38c69aeacfc2cdcd4f7bdfc09.jpg" alt="Dourado do mar">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-dourado">Dourado do mar</h3>
+                            <p class="fish-scientific">Coryphaena hippurus</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-dourado">60cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-dourado">Abr - Jun</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-dourado">
+                                O Coryphaena hippurus, conhecido como dourado-do-mar, é um peixe pelágico de grande porte encontrado em águas tropicais e subtropicais oceânicas ao redor do mundo. É diferente do dourado de água doce (Salminus brasiliensis), embora compartilhem o mesmo nome comum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://files.agro20.com.br/uploads/2020/11/Robalo-3.jpg" alt="Robalo-branco">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-robalo">Robalo-branco</h3>
+                            <p class="fish-scientific">Centropomus undecimalis</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-robalo">36cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-robalo">Abr - Jun</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-robalo">
+                                O robalo-branco (Centropomus undecimalis) é uma das espécies mais apreciadas da costa brasileira, tanto na pesca esportiva quanto na culinária. Vive em águas salobras e costeiras, sendo frequentemente encontrado em estuários, manguezais e desembocaduras de rios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="tips-section-title">Dicas para Maio</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-unlock-alt"></i>
+                        </div>
+                        <h3 data-translate="tip-title-1">Pirarucu Liberado</h3>
+                        <p data-translate="tip-text-1">Fim do defeso do pirarucu, mas sempre verifique regulamentações locais específicas.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-temperature-low"></i>
+                        </div>
+                        <h3 data-translate="tip-title-2">Temperaturas Amenas</h3>
+                        <p data-translate="tip-text-2">Maio oferece temperaturas ideais para pesca durante todo o dia.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3 data-translate="tip-title-3">Cuidado Parental</h3>
+                        <p data-translate="tip-text-3">Respeite ninhos de tucunaré e trairão. Eles estão cuidando de seus filhotes.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-fishing-line"></i>
+                        </div>
+                        <h3 data-translate="tip-title-4">Técnicas Variadas</h3>
+                        <p data-translate="tip-text-4">Experimente diferentes técnicas com a maioria das espécies liberadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-fish"></i>
+                        <span data-translate="footer-logo">Pesca Responsável</span>
+                    </div>
+                    <p data-translate="footer-motto">Protegendo os recursos pesqueiros para as futuras gerações.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-links-title">Links Úteis</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="footer-link-home">Início</a></li>
+                        <li><a href="index.html#about" data-translate="footer-link-about">Sobre</a></li>
+                        <li><a href="index.html#months" data-translate="footer-link-periods">Períodos</a></li>
+                        <li><a href="index.html#tips" data-translate="footer-link-tips">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-contact-title">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> info@pescaresponsavel.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2024 Pesca Responsável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pt: {
+                "title": "Maio - Períodos de Defeso",
+                "logo": "Pesca Responsável",
+                "nav-home": "Início",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Dicas",
+                "breadcrumb-home": "Início",
+                "breadcrumb-month": "Maio",
+                "month-title": "Maio",
+                "month-subtitle": "Outono • Fim do defeso do pirarucu",
+                "stats-species": "Espécies em defeso",
+                "stats-temp": "Temperatura média",
+                "fish-section-title": "Peixes em Período de Defeso",
+                "fish-name-dourado": "Dourado do mar",
+                "size-dourado": "60cm mín.",
+                "period-dourado": "Abr - Jun",
+                "description-dourado": "O Coryphaena hippurus, conhecido como dourado-do-mar, é um peixe pelágico de grande porte encontrado em águas tropicais e subtropicais oceânicas ao redor do mundo. É diferente do dourado de água doce (Salminus brasiliensis), embora compartilhem o mesmo nome comum.",
+                "fish-name-robalo": "Robalo-branco",
+                "size-robalo": "36cm mín.",
+                "period-robalo": "Abr - Jun",
+                "description-robalo": "O robalo-branco (Centropomus undecimalis) é uma das espécies mais apreciadas da costa brasileira, tanto na pesca esportiva quanto na culinária. Vive em águas salobras e costeiras, sendo frequentemente encontrado em estuários, manguezais e desembocaduras de rios.",
+                "tips-section-title": "Dicas para Maio",
+                "tip-title-1": "Pirarucu Liberado",
+                "tip-text-1": "Fim do defeso do pirarucu, mas sempre verifique regulamentações locais específicas.",
+                "tip-title-2": "Temperaturas Amenas",
+                "tip-text-2": "Maio oferece temperaturas ideais para pesca durante todo o dia.",
+                "tip-title-3": "Cuidado Parental",
+                "tip-text-3": "Respeite ninhos de tucunaré e trairão. Eles estão cuidando de seus filhotes.",
+                "tip-title-4": "Técnicas Variadas",
+                "tip-text-4": "Experimente diferentes técnicas com a maioria das espécies liberadas.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegendo os recursos pesqueiros para as futuras gerações.",
+                "footer-links-title": "Links Úteis",
+                "footer-link-home": "Início",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Dicas",
+                "footer-contact-title": "Contato",
+                "footer-copyright": "&copy; 2024 Pesca Responsável. Todos os direitos reservados."
+            },
+            en: {
+                "title": "May - Closed Season",
+                "logo": "Responsible Fishing",
+                "nav-home": "Home",
+                "nav-about": "About",
+                "nav-periods": "Seasons",
+                "nav-tips": "Tips",
+                "breadcrumb-home": "Home",
+                "breadcrumb-month": "May",
+                "month-title": "May",
+                "month-subtitle": "Autumn • End of pirarucu closed season",
+                "stats-species": "Species in closed season",
+                "stats-temp": "Average temperature",
+                "fish-section-title": "Fish in Closed Season",
+                "fish-name-dourado": "Dorado",
+                "size-dourado": "60cm min.",
+                "period-dourado": "Apr - Jun",
+                "description-dourado": "Coryphaena hippurus, known as mahi-mahi or common dolphinfish, is a large pelagic fish found in tropical and subtropical oceanic waters worldwide. It is different from the freshwater dourado (Salminus brasiliensis), although they share the same common name.",
+                "fish-name-robalo": "Snook",
+                "size-robalo": "36cm min.",
+                "period-robalo": "Apr - Jun",
+                "description-robalo": "The common snook (Centropomus undecimalis) is one of the most popular species on the Brazilian coast, both for sport fishing and cuisine. It lives in brackish and coastal waters, often found in estuaries, mangroves, and river mouths.",
+                "tips-section-title": "Tips for May",
+                "tip-title-1": "Pirarucu Released",
+                "tip-text-1": "End of pirarucu closed season, but always check specific local regulations.",
+                "tip-title-2": "Mild Temperatures",
+                "tip-text-2": "May offers ideal temperatures for fishing all day long.",
+                "tip-title-3": "Parental Care",
+                "tip-text-3": "Respect peacock bass and trairão nests. They are caring for their young.",
+                "tip-title-4": "Varied Techniques",
+                "tip-text-4": "Experiment with different techniques as most species are released.",
+                "footer-logo": "Responsible Fishing",
+                "footer-motto": "Protecting fisheries resources for future generations.",
+                "footer-links-title": "Useful Links",
+                "footer-link-home": "Home",
+                "footer-link-about": "About",
+                "footer-link-periods": "Seasons",
+                "footer-link-tips": "Tips",
+                "footer-contact-title": "Contact",
+                "footer-copyright": "&copy; 2024 Responsible Fishing. All rights reserved."
+            },
+            es: {
+                "title": "Mayo - Períodos de Veda",
+                "logo": "Pesca Responsable",
+                "nav-home": "Inicio",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Consejos",
+                "breadcrumb-home": "Inicio",
+                "breadcrumb-month": "Mayo",
+                "month-title": "Mayo",
+                "month-subtitle": "Otoño • Fin de la veda del pirarucu",
+                "stats-species": "Especies en veda",
+                "stats-temp": "Temperatura media",
+                "fish-section-title": "Peces en Período de Veda",
+                "fish-name-dourado": "Dorado del mar",
+                "size-dourado": "60cm mín.",
+                "period-dourado": "Abr - Jun",
+                "description-dourado": "El Coryphaena hippurus, conocido como dorado del mar, es un pez pelágico grande que se encuentra en aguas tropicales y subtropicales oceánicas en todo el mundo. Es diferente del dorado de agua dulce (Salminus brasiliensis), aunque comparten el mismo nombre común.",
+                "fish-name-robalo": "Robalo blanco",
+                "size-robalo": "36cm mín.",
+                "period-robalo": "Abr - Jun",
+                "description-robalo": "El robalo blanco (Centropomus undecimalis) es una de las especies más apreciadas en la costa brasileña, tanto en la pesca deportiva como en la culinaria. Vive en aguas salobres y costeras, y se encuentra frecuentemente en estuarios, manglares y desembocaduras de ríos.",
+                "tips-section-title": "Consejos para Mayo",
+                "tip-title-1": "Pirarucu Liberado",
+                "tip-text-1": "Fin de la veda del pirarucu, pero siempre verifique las regulaciones locales específicas.",
+                "tip-title-2": "Temperaturas Suaves",
+                "tip-text-2": "Mayo ofrece temperaturas ideales para pescar durante todo el día.",
+                "tip-title-3": "Cuidado Parental",
+                "tip-text-3": "Respete los nidos de tucunaré y trairão. Están cuidando de sus crías.",
+                "tip-title-4": "Técnicas Variadas",
+                "tip-text-4": "Experimente diferentes técnicas con la mayoría de las especies liberadas.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegiendo los recursos pesqueros para las futuras generaciones.",
+                "footer-links-title": "Enlaces Útiles",
+                "footer-link-home": "Inicio",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Consejos",
+                "footer-contact-title": "Contacto",
+                "footer-copyright": "&copy; 2024 Pesca Responsable. Todos los derechos reservados."
+            }
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                langButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const newLang = button.getAttribute('data-lang');
+                document.documentElement.lang = newLang;
+
+                const langData = translations[newLang];
+
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (langData[key]) {
+                        element.innerHTML = langData[key];
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

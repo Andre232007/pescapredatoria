@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Julho - Períodos de Defeso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="month-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Captura de tela 2025-06-24 221828-Photoroom (1).png" type="image/x-icon">
+
+    <style>
+        /* CSS para os botões de idioma */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-btn.active {
+            background-color: #007bff; /* Cor azul para o botão ativo */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    <span data-translate="logo">Pesca Responsável</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav-home">Início</a></li>
+                    <li><a href="index.html#about" data-translate="nav-about">Sobre</a></li>
+                    <li><a href="index.html#months" data-translate="nav-periods">Períodos</a></li>
+                    <li><a href="index.html#tips" data-translate="nav-tips">Dicas</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="en">ENG</button>
+                            <button class="lang-btn" data-lang="es">ESP</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="month-page">
+        <section class="month-hero julho">
+            <div class="month-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html" data-translate="breadcrumb-home">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-translate="breadcrumb-month">Julho</span>
+                </div>
+                <h1 class="month-title" data-translate="month-title">Julho</h1>
+                <p class="month-subtitle" data-translate="month-subtitle">Inverno • Pesca livre para todas as espécies</p>
+                <div class="month-stats">
+                    <div class="stat">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label" data-translate="stats-species">Espécies em defeso</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">16°C</div>
+                        <div class="stat-label" data-translate="stats-temp">Temperatura média</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fish-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="fish-section-title">Espécies Liberadas para Pesca</h2>
+               
+                
+                <div class="fish-grid">
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/1200x/6d/bd/75/6dbd75b38c69aeacfc2cdcd4f7bdfc09.jpg" alt="Dourado de água doce">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-dourado">Dourado de água doce</h3>
+                            <p class="fish-scientific">Salminus brasiliensis</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-dourado">35cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-dourado">Sem defeso nacional</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-dourado">
+                                O dourado (Salminus brasiliensis) é um peixe predador de grande porte, muito valorizado na pesca esportiva por sua força e agilidade. Em julho, com o fim das proibições regionais de defeso, a pesca da espécie é liberada em diversas bacias hidrográficas do Brasil.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/1200x/16/7c/71/167c714d9f4bb2f1a17fe284bd870853.jpg" alt="Tainha">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-tainha">Tainha</h3>
+                            <p class="fish-scientific">Mugil liza</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-tainha">30cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-check-circle"></i> <span data-translate="period-tainha">Liberado</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-tainha">
+                                A tainha (Mugil liza) é uma espécie costeira de grande importância ecológica, cultural e econômica no Brasil. Presente em estuários, manguezais e águas costeiras, ela é especialmente valorizada pela sua carne e ovas — um dos principais produtos da pesca artesanal no sul e sudeste do país.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="tips-section-title">Dicas para Julho</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 data-translate="tip-title-1">Mês Perfeito</h3>
+                        <p data-translate="tip-text-1">Julho é o mês ideal para pesca com todas as espécies liberadas.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3 data-translate="tip-title-2">Pesque no Calor</h3>
+                        <p data-translate="tip-text-2">Durante o inverno, prefira pescar entre 10h e 15h, quando está mais quente.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <h3 data-translate="tip-title-3">Águas Profundas</h3>
+                        <p data-translate="tip-text-3">Peixes procuram águas mais profundas e protegidas durante o frio.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-snail"></i>
+                        </div>
+                        <h3 data-translate="tip-title-4">Iscas Lentas</h3>
+                        <p data-translate="tip-text-4">Use iscas com movimento mais lento, pois os peixes ficam menos ativos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-fish"></i>
+                        <span data-translate="footer-logo">Pesca Responsável</span>
+                    </div>
+                    <p data-translate="footer-motto">Protegendo os recursos pesqueiros para as futuras gerações.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-links-title">Links Úteis</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="footer-link-home">Início</a></li>
+                        <li><a href="index.html#about" data-translate="footer-link-about">Sobre</a></li>
+                        <li><a href="index.html#months" data-translate="footer-link-periods">Períodos</a></li>
+                        <li><a href="index.html#tips" data-translate="footer-link-tips">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-contact-title">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> info@pescaresponsavel.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2024 Pesca Responsável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pt: {
+                "title": "Julho - Períodos de Defeso",
+                "logo": "Pesca Responsável",
+                "nav-home": "Início",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Dicas",
+                "breadcrumb-home": "Início",
+                "breadcrumb-month": "Julho",
+                "month-title": "Julho",
+                "month-subtitle": "Inverno • Pesca livre para todas as espécies",
+                "stats-species": "Espécies em defeso",
+                "stats-temp": "Temperatura média",
+                "fish-section-title": "Espécies Liberadas para Pesca",
+                "section-description": "Julho é o mês ideal para pesca! Todas as principais espécies estão liberadas, mas lembre-se sempre de respeitar tamanhos mínimos e cotas de captura.",
+                "fish-name-dourado": "Dourado de água doce",
+                "size-dourado": "35cm mín.",
+                "period-dourado": "Sem defeso nacional",
+                "description-dourado": "O dourado (Salminus brasiliensis) é um peixe predador de grande porte, muito valorizado na pesca esportiva por sua força e agilidade. Em julho, com o fim das proibições regionais de defeso, a pesca da espécie é liberada em diversas bacias hidrográficas do Brasil.",
+                "fish-name-tainha": "Tainha",
+                "size-tainha": "30cm mín.",
+                "period-tainha": "Liberado",
+                "description-tainha": "A tainha (Mugil liza) é uma espécie costeira de grande importância ecológica, cultural e econômica no Brasil. Presente em estuários, manguezais e águas costeiras, ela é especialmente valorizada pela sua carne e ovas — um dos principais produtos da pesca artesanal no sul e sudeste do país.",
+                "tips-section-title": "Dicas para Julho",
+                "tip-title-1": "Mês Perfeito",
+                "tip-text-1": "Julho é o mês ideal para pesca com todas as espécies liberadas.",
+                "tip-title-2": "Pesque no Calor",
+                "tip-text-2": "Durante o inverno, prefira pescar entre 10h e 15h, quando está mais quente.",
+                "tip-title-3": "Águas Profundas",
+                "tip-text-3": "Peixes procuram águas mais profundas e protegidas durante o frio.",
+                "tip-title-4": "Iscas Lentas",
+                "tip-text-4": "Use iscas com movimento mais lento, pois os peixes ficam menos ativos.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegendo os recursos pesqueiros para as futuras gerações.",
+                "footer-links-title": "Links Úteis",
+                "footer-link-home": "Início",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Dicas",
+                "footer-contact-title": "Contato",
+                "footer-copyright": "&copy; 2024 Pesca Responsável. Todos os direitos reservados."
+            },
+            en: {
+                "title": "July - Closed Season",
+                "logo": "Responsible Fishing",
+                "nav-home": "Home",
+                "nav-about": "About",
+                "nav-periods": "Seasons",
+                "nav-tips": "Tips",
+                "breadcrumb-home": "Home",
+                "breadcrumb-month": "July",
+                "month-title": "July",
+                "month-subtitle": "Winter • Free fishing for all species",
+                "stats-species": "Species in closed season",
+                "stats-temp": "Average temperature",
+                "fish-section-title": "Species Released for Fishing",
+                "section-description": "July is the ideal month for fishing! All major species are released, but always remember to respect minimum sizes and catch limits.",
+                "fish-name-dourado": "Freshwater Dorado",
+                "size-dourado": "35cm min.",
+                "period-dourado": "No national closed season",
+                "description-dourado": "The dorado (Salminus brasiliensis) is a large predatory fish, highly valued in sport fishing for its strength and agility. In July, with the end of regional closed season prohibitions, fishing for this species is released in various river basins in Brazil.",
+                "fish-name-tainha": "Mullet",
+                "size-tainha": "30cm min.",
+                "period-tainha": "Released",
+                "description-tainha": "The mullet (Mugil liza) is a coastal species of great ecological, cultural, and economic importance in Brazil. Found in estuaries, mangroves, and coastal waters, it is especially valued for its meat and roe — one of the main products of artisanal fishing in the South and Southeast of the country.",
+                "tips-section-title": "Tips for July",
+                "tip-title-1": "Perfect Month",
+                "tip-text-1": "July is the ideal month for fishing with all species released.",
+                "tip-title-2": "Fish in the Warmth",
+                "tip-text-2": "During winter, prefer to fish between 10am and 3pm, when it's warmest.",
+                "tip-title-3": "Deeper Waters",
+                "tip-text-3": "Fish seek deeper, more protected waters during the cold.",
+                "tip-title-4": "Slow Lures",
+                "tip-text-4": "Use lures with slower movements, as fish are less active.",
+                "footer-logo": "Responsible Fishing",
+                "footer-motto": "Protecting fisheries resources for future generations.",
+                "footer-links-title": "Useful Links",
+                "footer-link-home": "Home",
+                "footer-link-about": "About",
+                "footer-link-periods": "Seasons",
+                "footer-link-tips": "Tips",
+                "footer-contact-title": "Contact",
+                "footer-copyright": "&copy; 2024 Responsible Fishing. All rights reserved."
+            },
+            es: {
+                "title": "Julio - Períodos de Veda",
+                "logo": "Pesca Responsable",
+                "nav-home": "Inicio",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Consejos",
+                "breadcrumb-home": "Inicio",
+                "breadcrumb-month": "Julio",
+                "month-title": "Julio",
+                "month-subtitle": "Invierno • Pesca libre para todas las especies",
+                "stats-species": "Especies en veda",
+                "stats-temp": "Temperatura media",
+                "fish-section-title": "Especies Liberadas para la Pesca",
+                "section-description": "¡Julio es el mes ideal para pescar! Todas las principales especies están liberadas, pero recuerde siempre respetar los tamaños mínimos y las cuotas de captura.",
+                "fish-name-dourado": "Dorado de agua dulce",
+                "size-dourado": "35cm mín.",
+                "period-dourado": "Sin veda nacional",
+                "description-dourado": "El dorado (Salminus brasiliensis) es un pez depredador grande, muy valorado en la pesca deportiva por su fuerza y agilidad. En julio, con el fin de las prohibiciones regionales de veda, la pesca de la especie se libera en varias cuencas hidrográficas de Brasil.",
+                "fish-name-tainha": "Lisa",
+                "size-tainha": "30cm mín.",
+                "period-tainha": "Liberada",
+                "description-tainha": "La lisa (Mugil liza) es una especie costera de gran importancia ecológica, cultural y económica en Brasil. Presente en estuarios, manglares y aguas costeras, es especialmente valorada por su carne y huevas, uno de los principales productos de la pesca artesanal en el sur y sureste del país.",
+                "tips-section-title": "Consejos para Julio",
+                "tip-title-1": "Mes Perfecto",
+                "tip-text-1": "Julio es el mes ideal para pescar con todas las especies liberadas.",
+                "tip-title-2": "Pesca en el Calor",
+                "tip-text-2": "Durante el invierno, prefiera pescar entre las 10h y las 15h, cuando hace más calor.",
+                "tip-title-3": "Aguas Profundas",
+                "tip-text-3": "Los peces buscan aguas más profundas y protegidas durante el frío.",
+                "tip-title-4": "Cebos Lentos",
+                "tip-text-4": "Use cebos con movimientos más lentos, ya que los peces están menos activos.",
+                "footer-logo": "Pesca Responsable",
+                "footer-motto": "Protegiendo los recursos pesqueros para las futuras generaciones.",
+                "footer-links-title": "Enlaces Útiles",
+                "footer-link-home": "Inicio",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Consejos",
+                "footer-contact-title": "Contacto",
+                "footer-copyright": "&copy; 2024 Pesca Responsable. Todos los derechos reservados."
+            }
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                langButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const newLang = button.getAttribute('data-lang');
+                document.documentElement.lang = newLang;
+
+                const langData = translations[newLang];
+
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (langData[key]) {
+                        element.innerHTML = langData[key];
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Abril - Períodos de Defeso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="month-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Captura de tela 2025-06-24 221828-Photoroom (1).png" type="image/x-icon">
+
+    <style>
+        /* CSS para os botões de idioma */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-btn.active {
+            background-color: #007bff; /* Cor azul para o botão ativo */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    <span data-translate="logo">Pesca Responsável</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav-home">Início</a></li>
+                    <li><a href="index.html#about" data-translate="nav-about">Sobre</a></li>
+                    <li><a href="index.html#months" data-translate="nav-periods">Períodos</a></li>
+                    <li><a href="index.html#tips" data-translate="nav-tips">Dicas</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="en">ENG</button>
+                            <button class="lang-btn" data-lang="es">ESP</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="month-page">
+        <section class="month-hero abril">
+            <div class="month-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html" data-translate="breadcrumb-home">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-translate="breadcrumb-month">Abril</span>
+                </div>
+                <h1 class="month-title" data-translate="month-title">Abril</h1>
+                <p class="month-subtitle" data-translate="month-subtitle">Outono • Pesca liberada para maioria das espécies</p>
+                <div class="month-stats">
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label" data-translate="stats-species">Espécies em defeso</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">22°C</div>
+                        <div class="stat-label" data-translate="stats-temp">Temperatura média</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fish-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="fish-section-title">Peixes em Período de Defeso</h2>
+                <div class="fish-grid">
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/1200x/d2/e7/8f/d2e78f83b363d9229ed5381e84aacc5d.jpg" alt="Garoupa">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-garoupa">Garoupa</h3>
+                            <p class="fish-scientific">Epinephelus spp</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-garoupa">47cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-garoupa">Dez - abr</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-garoupa">
+                                A garoupa (Epinephelus spp.) permanece em defeso até 30 de abril, período em que ocorre sua reprodução em recifes e costões rochosos. Durante esses meses, sua pesca é proibida em várias regiões para evitar a captura de indivíduos em plena fase reprodutiva.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/1200x/55/ae/ef/55aeeffeb19fdeb2ab1398c7d6a399e9.jpg" alt="Lagosta Vermelha">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-lagosta">Lagosta Vermelha</h3>
+                            <p class="fish-scientific">Panulirus argus</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-lagosta">11cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-lagosta">Dez - abr</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-lagosta">
+                                A lagosta-vermelha (Panulirus argus) e a lagosta-verde (Panulirus laevicauda) ainda estão em defeso durante todo o mês de abril, quando ocorre a fase final de seu período reprodutivo. Durante esse tempo, é proibido capturar, transportar ou comercializar a espécie.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://st3.depositphotos.com/1818950/36535/i/450/depositphotos_365353668-stock-photo-deep-sea-fishing-catch-fish.jpg" alt="Pargo-vermelho">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-pargo">Pargo-vermelho</h3>
+                            <p class="fish-scientific">Lutjanus purpureus</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-pargo">30cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-pargo">Abr - Jun</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-pargo">
+                                Embora o pico do defeso do pargo-vermelho (Lutjanus purpureus) ocorra até fevereiro, abril ainda pode ter restrições locais em algumas áreas (especialmente na costa Norte) para proteger o fim da temporada reprodutiva. Em locais onde o defeso se estende, a captura é controlada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="tips-section-title">Dicas para Abril</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 data-translate="tip-title-1">Ótimo Mês para Pescar</h3>
+                        <p data-translate="tip-text-1">Abril é excelente para pesca, com poucas restrições e temperaturas ideais.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <h3 data-translate="tip-title-2">Clima Favorável</h3>
+                        <p data-translate="tip-text-2">Temperaturas amenas e menor incidência de chuvas favorecem a pesca.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 data-translate="tip-title-3">Pesca Esportiva</h3>
+                        <p data-translate="tip-text-3">Mês ideal para competições e pesca esportiva com diversas espécies liberadas.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 data-translate="tip-title-4">Cuidado com Ninhos</h3>
+                        <p data-translate="tip-text-4">Espécies como tucunaré fazem ninhos. Evite pescar próximo a áreas reprodutivas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-fish"></i>
+                        <span data-translate="footer-logo">Pesca Responsável</span>
+                    </div>
+                    <p data-translate="footer-motto">Protegendo os recursos pesqueiros para as futuras gerações.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-links-title">Links Úteis</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="footer-link-home">Início</a></li>
+                        <li><a href="index.html#about" data-translate="footer-link-about">Sobre</a></li>
+                        <li><a href="index.html#months" data-translate="footer-link-periods">Períodos</a></li>
+                        <li><a href="index.html#tips" data-translate="footer-link-tips">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-contact-title">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> info@pescaresponsavel.com</p>
+                    <p><i class="fas fa-phone"></i>  (27) 99762-3605</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2024 Pesca Responsável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pt: {
+                "title": "Abril - Períodos de Defeso",
+                "logo": "Pesca Responsável",
+                "nav-home": "Início",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Dicas",
+                "breadcrumb-home": "Início",
+                "breadcrumb-month": "Abril",
+                "month-title": "Abril",
+                "month-subtitle": "Outono • Pesca liberada para maioria das espécies",
+                "stats-species": "Espécies em defeso",
+                "stats-temp": "Temperatura média",
+                "fish-section-title": "Peixes em Período de Defeso",
+                "fish-name-garoupa": "Garoupa",
+                "size-garoupa": "47cm mín.",
+                "period-garoupa": "Dez - abr",
+                "description-garoupa": "A garoupa (Epinephelus spp.) permanece em defeso até 30 de abril, período em que ocorre sua reprodução em recifes e costões rochosos. Durante esses meses, sua pesca é proibida em várias regiões para evitar a captura de indivíduos em plena fase reprodutiva.",
+                "fish-name-lagosta": "Lagosta Vermelha",
+                "size-lagosta": "11cm mín.",
+                "period-lagosta": "Dez - abr",
+                "description-lagosta": "A lagosta-vermelha (Panulirus argus) e a lagosta-verde (Panulirus laevicauda) ainda estão em defeso durante todo o mês de abril, quando ocorre a fase final de seu período reprodutivo. Durante esse tempo, é proibido capturar, transportar ou comercializar a espécie.",
+                "fish-name-pargo": "Pargo-vermelho",
+                "size-pargo": "30cm mín.",
+                "period-pargo": "Abr - Jun",
+                "description-pargo": "Embora o pico do defeso do pargo-vermelho (Lutjanus purpureus) ocorra até fevereiro, abril ainda pode ter restrições locais em algumas áreas (especialmente na costa Norte) para proteger o fim da temporada reprodutiva. Em locais onde o defeso se estende, a captura é controlada.",
+                "tips-section-title": "Dicas para Abril",
+                "tip-title-1": "Ótimo Mês para Pescar",
+                "tip-text-1": "Abril é excelente para pesca, com poucas restrições e temperaturas ideais.",
+                "tip-title-2": "Clima Favorável",
+                "tip-text-2": "Temperaturas amenas e menor incidência de chuvas favorecem a pesca.",
+                "tip-title-3": "Pesca Esportiva",
+                "tip-text-3": "Mês ideal para competições e pesca esportiva com diversas espécies liberadas.",
+                "tip-title-4": "Cuidado com Ninhos",
+                "tip-text-4": "Espécies como tucunaré fazem ninhos. Evite pescar próximo a áreas reprodutivas.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegendo os recursos pesqueiros para as futuras gerações.",
+                "footer-links-title": "Links Úteis",
+                "footer-link-home": "Início",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Dicas",
+                "footer-contact-title": "Contato",
+                "footer-copyright": "&copy; 2024 Pesca Responsável. Todos os direitos reservados."
+            },
+            en: {
+                "title": "April - Closed Season",
+                "logo": "Responsible Fishing",
+                "nav-home": "Home",
+                "nav-about": "About",
+                "nav-periods": "Seasons",
+                "nav-tips": "Tips",
+                "breadcrumb-home": "Home",
+                "breadcrumb-month": "April",
+                "month-title": "April",
+                "month-subtitle": "Autumn • Fishing released for most species",
+                "stats-species": "Species in closed season",
+                "stats-temp": "Average temperature",
+                "fish-section-title": "Fish in Closed Season",
+                "fish-name-garoupa": "Grouper",
+                "size-garoupa": "47cm min.",
+                "period-garoupa": "Dec - Apr",
+                "description-garoupa": "The grouper (Epinephelus spp.) remains in closed season until April 30th, the period when its reproduction occurs in reefs and rocky shores. During these months, its fishing is prohibited in several regions to avoid the capture of individuals in the reproductive phase.",
+                "fish-name-lagosta": "Red Lobster",
+                "size-lagosta": "11cm min.",
+                "period-lagosta": "Dec - Apr",
+                "description-lagosta": "The red lobster (Panulirus argus) and the green lobster (Panulirus laevicauda) are still in closed season throughout April, when the final phase of their reproductive period occurs. During this time, it is prohibited to capture, transport, or commercialize the species.",
+                "fish-name-pargo": "Red Snapper",
+                "size-pargo": "30cm min.",
+                "period-pargo": "Apr - Jun",
+                "description-pargo": "Although the peak of the red snapper (Lutjanus purpureus) closed season occurs until February, April may still have local restrictions in some areas (especially on the North coast) to protect the end of the reproductive season. In locations where the closed season extends, capture is controlled.",
+                "tips-section-title": "Tips for April",
+                "tip-title-1": "Great Month for Fishing",
+                "tip-text-1": "April is excellent for fishing, with few restrictions and ideal temperatures.",
+                "tip-title-2": "Favorable Weather",
+                "tip-text-2": "Mild temperatures and less rainfall favor fishing.",
+                "tip-title-3": "Sport Fishing",
+                "tip-text-3": "Ideal month for competitions and sport fishing with several species released.",
+                "tip-title-4": "Care with Nests",
+                "tip-text-4": "Species like the peacock bass make nests. Avoid fishing near reproductive areas.",
+                "footer-logo": "Responsible Fishing",
+                "footer-motto": "Protecting fisheries resources for future generations.",
+                "footer-links-title": "Useful Links",
+                "footer-link-home": "Home",
+                "footer-link-about": "About",
+                "footer-link-periods": "Seasons",
+                "footer-link-tips": "Tips",
+                "footer-contact-title": "Contact",
+                "footer-copyright": "&copy; 2024 Responsible Fishing. All rights reserved."
+            },
+            es: {
+                "title": "Abril - Períodos de Veda",
+                "logo": "Pesca Responsable",
+                "nav-home": "Inicio",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Consejos",
+                "breadcrumb-home": "Inicio",
+                "breadcrumb-month": "Abril",
+                "month-title": "Abril",
+                "month-subtitle": "Otoño • Pesca liberada para la mayoría de las especies",
+                "stats-species": "Especies en veda",
+                "stats-temp": "Temperatura media",
+                "fish-section-title": "Peces en Período de Veda",
+                "fish-name-garoupa": "Mero",
+                "size-garoupa": "47cm mín.",
+                "period-garoupa": "Dic - Abr",
+                "description-garoupa": "El mero (Epinephelus spp.) permanece en veda hasta el 30 de abril, período en el que se reproduce en arrecifes y costas rocosas. Durante estos meses, su pesca está prohibida en varias regiones para evitar la captura de individuos en plena fase reproductiva.",
+                "fish-name-lagosta": "Langosta Roja",
+                "size-lagosta": "11cm mín.",
+                "period-lagosta": "Dic - Abr",
+                "description-lagosta": "La langosta roja (Panulirus argus) y la langosta verde (Panulirus laevicauda) todavía están en veda durante todo el mes de abril, cuando ocurre la fase final de su período reproductivo. Durante este tiempo, está prohibido capturar, transportar o comercializar la especie.",
+                "fish-name-pargo": "Pargo Rojo",
+                "size-pargo": "30cm mín.",
+                "period-pargo": "Abr - Jun",
+                "description-pargo": "Aunque el pico de la veda del pargo rojo (Lutjanus purpureus) ocurre hasta febrero, abril todavía puede tener restricciones locales en algunas áreas (especialmente en la costa norte) para proteger el final de la temporada reproductiva. En lugares donde la veda se extiende, la captura es controlada.",
+                "tips-section-title": "Consejos para Abril",
+                "tip-title-1": "Excelente Mes para Pescar",
+                "tip-text-1": "Abril es excelente para la pesca, con pocas restricciones y temperaturas ideales.",
+                "tip-title-2": "Clima Favorable",
+                "tip-text-2": "Temperaturas suaves y menor incidencia de lluvias favorecen la pesca.",
+                "tip-title-3": "Pesca Deportiva",
+                "tip-text-3": "Mes ideal para competiciones y pesca deportiva con diversas especies liberadas.",
+                "tip-title-4": "Cuidado con los Nidos",
+                "tip-text-4": "Especies como el tucunaré hacen nidos. Evite pescar cerca de áreas reproductivas.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegendo los recursos pesqueros para las futuras generaciones.",
+                "footer-links-title": "Enlaces Útiles",
+                "footer-link-home": "Inicio",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Consejos",
+                "footer-contact-title": "Contacto",
+                "footer-copyright": "&copy; 2024 Pesca Responsable. Todos los derechos reservados."
+            }
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                langButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const newLang = button.getAttribute('data-lang');
+                document.documentElement.lang = newLang;
+
+                const langData = translations[newLang];
+
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (langData[key]) {
+                        element.innerHTML = langData[key];
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

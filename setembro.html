@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Setembro - Períodos de Defeso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="month-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Captura de tela 2025-06-24 221828-Photoroom (1).png" type="image/x-icon">
+
+    <style>
+        /* CSS para os botões de idioma */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-btn.active {
+            background-color: #007bff; /* Cor azul para o botão ativo */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    <span data-translate="logo">Pesca Responsável</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav-home">Início</a></li>
+                    <li><a href="index.html#about" data-translate="nav-about">Sobre</a></li>
+                    <li><a href="index.html#months" data-translate="nav-periods">Períodos</a></li>
+                    <li><a href="index.html#tips" data-translate="nav-tips">Dicas</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="en">ENG</button>
+                            <button class="lang-btn" data-lang="es">ESP</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="month-page">
+        <section class="month-hero setembro">
+            <div class="month-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html" data-translate="breadcrumb-home">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-translate="breadcrumb-month">Setembro</span>
+                </div>
+                <h1 class="month-title" data-translate="month-title">Setembro</h1>
+                <p class="month-subtitle" data-translate="month-subtitle">Primavera • Renovação da natureza</p>
+                <div class="month-stats">
+                    <div class="stat">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label" data-translate="stats-species">Espécies em defeso</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">20°C</div>
+                        <div class="stat-label" data-translate="stats-temp">Temperatura média</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fish-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="fish-section-title">Peixes em Período de Defeso</h2>
+                
+                <div class="fish-grid">
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/736x/b7/0f/d2/b70fd2ffc505dfe08d65d3d3618f40c7.jpg" alt="Anchova">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-anchova">Anchova</h3>
+                            <p class="fish-scientific">Pomatomus saltatrix</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-anchova">43cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-anchova">Set - Nov</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-anchova">
+                                A anchova (Pomatomus saltatrix) é uma espécie de grande importância econômica e ecológica no litoral brasileiro. Devido à sua alta vulnerabilidade durante a época de reprodução, há um período de defeso estabelecido anualmente. No Sudeste e Sul do Brasil, o defeso da anchova ocorre geralmente entre setembro e novembro, podendo variar levemente conforme o estado, visando proteger a desova da espécie.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="tips-section-title">Dicas para Setembro</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3 data-translate="tip-title-1">Início da Primavera</h3>
+                        <p data-translate="tip-text-1">Setembro traz renovação. Temperaturas mais amenas favorecem a pesca em água doce.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-wave-sine"></i>
+                        </div>
+                        <h3 data-translate="tip-title-2">Pesca Marinha</h3>
+                        <p data-translate="tip-text-2">Cuidado com a anchova em defeso. Procure outras espécies marinhas liberadas.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-temperature-up"></i>
+                        </div>
+                        <h3 data-translate="tip-title-3">Aquecimento Gradual</h3>
+                        <p data-translate="tip-text-3">Peixes voltam a ficar mais ativos com o aquecimento progressivo das águas.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 data-translate="tip-title-4">Renovação Natural</h3>
+                        <p data-translate="tip-text-4">Aproveite a primavera para explorar novos locais e técnicas de pesca.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-fish"></i>
+                        <span data-translate="footer-logo">Pesca Responsável</span>
+                    </div>
+                    <p data-translate="footer-motto">Protegendo os recursos pesqueiros para as futuras gerações.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-links-title">Links Úteis</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="footer-link-home">Início</a></li>
+                        <li><a href="index.html#about" data-translate="footer-link-about">Sobre</a></li>
+                        <li><a href="index.html#months" data-translate="footer-link-periods">Períodos</a></li>
+                        <li><a href="index.html#tips" data-translate="footer-link-tips">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-contact-title">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> info@pescaresponsavel.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2024 Pesca Responsável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pt: {
+                "title": "Setembro - Períodos de Defeso",
+                "logo": "Pesca Responsável",
+                "nav-home": "Início",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Dicas",
+                "breadcrumb-home": "Início",
+                "breadcrumb-month": "Setembro",
+                "month-title": "Setembro",
+                "month-subtitle": "Primavera • Renovação da natureza",
+                "stats-species": "Espécies em defeso",
+                "stats-temp": "Temperatura média",
+                "fish-section-title": "Peixes em Período de Defeso",
+                "fish-name-anchova": "Anchova",
+                "size-anchova": "40cm mín.",
+                "period-anchova": "Set - Nov",
+                "description-anchova": "A anchova (Pomatomus saltatrix) é uma espécie de grande importância econômica e ecológica no litoral brasileiro. Devido à sua alta vulnerabilidade durante a época de reprodução, há um período de defeso estabelecido anualmente. No Sudeste e Sul do Brasil, o defeso da anchova ocorre geralmente entre setembro e novembro, podendo variar levemente conforme o estado, visando proteger a desova da espécie.",
+                "tips-section-title": "Dicas para Setembro",
+                "tip-title-1": "Início da Primavera",
+                "tip-text-1": "Setembro traz renovação. Temperaturas mais amenas favorecem a pesca em água doce.",
+                "tip-title-2": "Pesca Marinha",
+                "tip-text-2": "Cuidado com a anchova em defeso. Procure outras espécies marinhas liberadas.",
+                "tip-title-3": "Aquecimento Gradual",
+                "tip-text-3": "Peixes voltam a ficar mais ativos com o aquecimento progressivo das águas.",
+                "tip-title-4": "Renovação Natural",
+                "tip-text-4": "Aproveite a primavera para explorar novos locais e técnicas de pesca.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegendo os recursos pesqueiros para as futuras gerações.",
+                "footer-links-title": "Links Úteis",
+                "footer-link-home": "Início",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Dicas",
+                "footer-contact-title": "Contato",
+                "footer-copyright": "&copy; 2024 Pesca Responsável. Todos os direitos reservados."
+            },
+            en: {
+                "title": "September - Closed Season",
+                "logo": "Responsible Fishing",
+                "nav-home": "Home",
+                "nav-about": "About",
+                "nav-periods": "Seasons",
+                "nav-tips": "Tips",
+                "breadcrumb-home": "Home",
+                "breadcrumb-month": "September",
+                "month-title": "September",
+                "month-subtitle": "Spring • Nature's renewal",
+                "stats-species": "Species in closed season",
+                "stats-temp": "Average temperature",
+                "fish-section-title": "Fish in Closed Season",
+                "fish-name-anchova": "Bluefish",
+                "size-anchova": "40cm min.",
+                "period-anchova": "Sep - Nov",
+                "description-anchova": "The bluefish (Pomatomus saltatrix) is a species of great economic and ecological importance on the Brazilian coast. Due to its high vulnerability during the reproduction season, an annual closed season is established. In Southeastern and Southern Brazil, the bluefish closed season generally occurs between September and November, and may vary slightly depending on the state, aiming to protect the species' spawning.",
+                "tips-section-title": "Tips for September",
+                "tip-title-1": "Beginning of Spring",
+                "tip-text-1": "September brings renewal. Milder temperatures favor freshwater fishing.",
+                "tip-title-2": "Marine Fishing",
+                "tip-text-2": "Be careful with bluefish in closed season. Look for other released marine species.",
+                "tip-title-3": "Gradual Warming",
+                "tip-text-3": "Fish become more active with the progressive warming of the waters.",
+                "tip-title-4": "Natural Renewal",
+                "tip-text-4": "Take advantage of spring to explore new locations and fishing techniques.",
+                "footer-logo": "Responsible Fishing",
+                "footer-motto": "Protecting fisheries resources for future generations.",
+                "footer-links-title": "Useful Links",
+                "footer-link-home": "Home",
+                "footer-link-about": "About",
+                "footer-link-periods": "Seasons",
+                "footer-link-tips": "Tips",
+                "footer-contact-title": "Contact",
+                "footer-copyright": "&copy; 2024 Responsible Fishing. All rights reserved."
+            },
+            es: {
+                "title": "Septiembre - Períodos de Veda",
+                "logo": "Pesca Responsable",
+                "nav-home": "Inicio",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Consejos",
+                "breadcrumb-home": "Inicio",
+                "breadcrumb-month": "Septiembre",
+                "month-title": "Septiembre",
+                "month-subtitle": "Primavera • Renovación de la naturaleza",
+                "stats-species": "Especies en veda",
+                "stats-temp": "Temperatura media",
+                "fish-section-title": "Peces en Período de Veda",
+                "fish-name-anchova": "Anchoa",
+                "size-anchova": "40cm mín.",
+                "period-anchova": "Sep - Nov",
+                "description-anchova": "La anchoa de banco (Pomatomus saltatrix) es una especie de gran importancia económica y ecológica en el litoral brasileño. Debido a su alta vulnerabilidad durante la época de reproducción, se establece un período de veda anual. En el Sudeste y Sur de Brasil, la veda de la anchoa generalmente ocurre entre septiembre y noviembre, pudiendo variar ligeramente según el estado, con el objetivo de proteger el desove de la especie.",
+                "tips-section-title": "Consejos para Septiembre",
+                "tip-title-1": "Inicio de la Primavera",
+                "tip-text-1": "Septiembre trae renovación. Temperaturas más suaves favorecen la pesca en agua dulce.",
+                "tip-title-2": "Pesca Marina",
+                "tip-text-2": "Tenga cuidado con la anchoa en veda. Busque otras especies marinas liberadas.",
+                "tip-title-3": "Calentamiento Gradual",
+                "tip-text-3": "Los peces vuelven a estar más activos con el calentamiento progresivo de las aguas.",
+                "tip-title-4": "Renovación Natural",
+                "tip-text-4": "Aproveche la primavera para explorar nuevos lugares y técnicas de pesca.",
+                "footer-logo": "Pesca Responsable",
+                "footer-motto": "Protegiendo los recursos pesqueros para las futuras generaciones.",
+                "footer-links-title": "Enlaces Útiles",
+                "footer-link-home": "Inicio",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Consejos",
+                "footer-contact-title": "Contacto",
+                "footer-copyright": "&copy; 2024 Pesca Responsable. Todos los derechos reservados."
+            }
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                langButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const newLang = button.getAttribute('data-lang');
+                document.documentElement.lang = newLang;
+
+                const langData = translations[newLang];
+
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (langData[key]) {
+                        element.innerHTML = langData[key];
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

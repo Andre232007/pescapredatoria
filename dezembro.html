@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Dezembro - Períodos de Defeso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="month-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Captura de tela 2025-06-24 221828-Photoroom (1).png" type="image/x-icon">
+    
+    <style>
+        /* CSS para os botões de idioma */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-btn.active {
+            background-color: #007bff; /* Cor azul para o botão ativo */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    <span data-translate="logo">Pesca Responsável</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav-home">Início</a></li>
+                    <li><a href="index.html#about" data-translate="nav-about">Sobre</a></li>
+                    <li><a href="index.html#months" data-translate="nav-periods">Períodos</a></li>
+                    <li><a href="index.html#tips" data-translate="nav-tips">Dicas</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="en">ENG</button>
+                            <button class="lang-btn" data-lang="es">ESP</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="month-page">
+        <section class="month-hero dezembro">
+            <div class="month-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html" data-translate="breadcrumb-home">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-translate="breadcrumb-month">Dezembro</span>
+                </div>
+                <h1 class="month-title" data-translate="month-title">Dezembro</h1>
+                <p class="month-subtitle" data-translate="month-subtitle">Verão • Pico do período reprodutivo</p>
+                <div class="month-stats">
+                    <div class="stat">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label" data-translate="stats-species">Espécies em defeso</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">28°C</div>
+                        <div class="stat-label" data-translate="stats-temp">Temperatura média</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fish-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="fish-section-title">Peixes em Período de Defeso</h2>
+                
+                <div class="fish-grid">
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://i.pinimg.com/736x/b7/0f/d2/b70fd2ffc505dfe08d65d3d3618f40c7.jpg" alt="Anchova">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-anchova">Anchova</h3>
+                            <p class="fish-scientific">Pomatomus saltatrix</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-anchova">43cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-anchova">Set - Nov</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-anchova">
+                                A anchova (Pomatomus saltatrix) é uma espécie de grande importância econômica e ecológica no litoral brasileiro. O período de defeso para sua reprodução, que geralmente ocorre entre setembro e novembro, encerra em dezembro, sendo liberada a captura da espécie.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="fish-card">
+                        <div class="fish-image">
+                            <img src="https://files.agro20.com.br/uploads/2020/11/Robalo-3.jpg" alt="Robalo-branco">
+                        </div>
+                        <div class="fish-info">
+                            <h3 class="fish-name" data-translate="fish-name-robalo">Robalo-branco</h3>
+                            <p class="fish-scientific">Centropomus undecimalis</p>
+                            <div class="fish-details">
+                                <span class="fish-size"><i class="fas fa-ruler"></i> <span data-translate="size-robalo">36cm mín.</span></span>
+                                <span class="fish-period"><i class="fas fa-calendar"></i> <span data-translate="period-robalo">Abr - Jun</span></span>
+                            </div>
+                            <p class="fish-description" data-translate="description-robalo">
+                                O robalo-branco (Centropomus undecimalis) é uma das espécies mais apreciadas da costa brasileira, tanto na pesca esportiva quanto na culinária. Seu período de defeso em algumas regiões ocorre entre abril e junho. No entanto, é crucial verificar as regulamentações locais, que podem variar de acordo com o estado ou a bacia hidrográfica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="tips-section-title">Dicas para Dezembro</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 data-translate="tip-title-1">Pico do Defeso</h3>
+                        <p data-translate="tip-text-1">Dezembro tem o pico de defeso para várias espécies de água doce. Redobre a atenção às restrições.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-thermometer-full"></i>
+                        </div>
+                        <h3 data-translate="tip-title-2">Temperaturas Altas</h3>
+                        <p data-translate="tip-text-2">Calor intenso e chuvas favorecem a reprodução. Pesque nas primeiras horas da manhã e evite o sol forte.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 data-translate="tip-title-3">Reprodução Ativa</h3>
+                        <p data-translate="tip-text-3">Muitas espécies estão em sua fase reprodutiva. Evite áreas de desova, como margens de rios e lagoas.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <h3 data-translate="tip-title-4">Poucas Opções</h3>
+                        <p data-translate="tip-text-4">Concentre-se em espécies não migratórias como tucunaré, traíra e lambari, que podem estar liberadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-fish"></i>
+                        <span data-translate="footer-logo">Pesca Responsável</span>
+                    </div>
+                    <p data-translate="footer-motto">Protegendo os recursos pesqueiros para as futuras gerações.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-links-title">Links Úteis</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="footer-link-home">Início</a></li>
+                        <li><a href="index.html#about" data-translate="footer-link-about">Sobre</a></li>
+                        <li><a href="index.html#months" data-translate="footer-link-periods">Períodos</a></li>
+                        <li><a href="index.html#tips" data-translate="footer-link-tips">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-contact-title">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> info@pescaresponsavel.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2024 Pesca Responsável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pt: {
+                "title": "Dezembro - Períodos de Defeso",
+                "logo": "Pesca Responsável",
+                "nav-home": "Início",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Dicas",
+                "breadcrumb-home": "Início",
+                "breadcrumb-month": "Dezembro",
+                "month-title": "Dezembro",
+                "month-subtitle": "Verão • Pico do período reprodutivo",
+                "stats-species": "Espécies em defeso",
+                "stats-temp": "Temperatura média",
+                "fish-section-title": "Peixes em Período de Defeso",
+                "fish-name-anchova": "Anchova",
+                "size-anchova": "43cm mín.",
+                "period-anchova": "Set - Nov",
+                "description-anchova": "A anchova (Pomatomus saltatrix) é uma espécie de grande importância econômica e ecológica no litoral brasileiro. O período de defeso para sua reprodução, que geralmente ocorre entre setembro e novembro, encerra em dezembro, sendo liberada a captura da espécie.",
+                "fish-name-robalo": "Robalo-branco",
+                "size-robalo": "36cm mín.",
+                "period-robalo": "Abr - Jun",
+                "description-robalo": "O robalo-branco (Centropomus undecimalis) é uma das espécies mais apreciadas da costa brasileira, tanto na pesca esportiva quanto na culinária. Seu período de defeso em algumas regiões ocorre entre abril e junho. No entanto, é crucial verificar as regulamentações locais, que podem variar de acordo com o estado ou a bacia hidrográfica.",
+                "tips-section-title": "Dicas para Dezembro",
+                "tip-title-1": "Pico do Defeso",
+                "tip-text-1": "Dezembro tem o pico de defeso para várias espécies de água doce. Redobre a atenção às restrições.",
+                "tip-title-2": "Temperaturas Altas",
+                "tip-text-2": "Calor intenso e chuvas favorecem a reprodução. Pesque nas primeiras horas da manhã e evite o sol forte.",
+                "tip-title-3": "Reprodução Ativa",
+                "tip-text-3": "Muitas espécies estão em sua fase reprodutiva. Evite áreas de desova, como margens de rios e lagoas.",
+                "tip-title-4": "Poucas Opções",
+                "tip-text-4": "Concentre-se em espécies não migratórias como tucunaré, traíra e lambari, que podem estar liberadas.",
+                "footer-logo": "Pesca Responsável",
+                "footer-motto": "Protegendo os recursos pesqueiros para as futuras gerações.",
+                "footer-links-title": "Links Úteis",
+                "footer-link-home": "Início",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Dicas",
+                "footer-contact-title": "Contato",
+                "footer-copyright": "&copy; 2024 Pesca Responsável. Todos os direitos reservados."
+            },
+            en: {
+                "title": "December - Closed Season",
+                "logo": "Responsible Fishing",
+                "nav-home": "Home",
+                "nav-about": "About",
+                "nav-periods": "Seasons",
+                "nav-tips": "Tips",
+                "breadcrumb-home": "Home",
+                "breadcrumb-month": "December",
+                "month-title": "December",
+                "month-subtitle": "Summer • Peak of the reproductive period",
+                "stats-species": "Species in closed season",
+                "stats-temp": "Average temperature",
+                "fish-section-title": "Fish in Closed Season",
+                "fish-name-anchova": "Bluefish",
+                "size-anchova": "43cm min.",
+                "period-anchova": "Sep - Nov",
+                "description-anchova": "The bluefish (Pomatomus saltatrix) is a species of great economic and ecological importance on the Brazilian coast. The closed season for its reproduction, which usually occurs between September and November, ends in December, and the species is available for capture.",
+                "fish-name-robalo": "Snook",
+                "size-robalo": "36cm min.",
+                "period-robalo": "Apr - Jun",
+                "description-robalo": "The snook (Centropomus undecimalis) is one of the most appreciated species on the Brazilian coast, both in sport fishing and in cuisine. Its closed season in some regions occurs between April and June. However, it is crucial to check local regulations, which can vary by state or river basin.",
+                "tips-section-title": "Tips for December",
+                "tip-title-1": "Peak of Closed Season",
+                "tip-text-1": "December is the peak of the closed season for several freshwater species. Pay extra attention to the restrictions.",
+                "tip-title-2": "High Temperatures",
+                "tip-text-2": "Intense heat and rains favor reproduction. Fish in the early morning and avoid strong sun.",
+                "tip-title-3": "Active Reproduction",
+                "tip-text-3": "Many species are in their reproductive phase. Avoid spawning areas, such as riverbanks and lagoons.",
+                "tip-title-4": "Few Options",
+                "tip-text-4": "Focus on non-migratory species like peacock bass and trahira, which may be allowed.",
+                "footer-logo": "Responsible Fishing",
+                "footer-motto": "Protecting fisheries resources for future generations.",
+                "footer-links-title": "Useful Links",
+                "footer-link-home": "Home",
+                "footer-link-about": "About",
+                "footer-link-periods": "Seasons",
+                "footer-link-tips": "Tips",
+                "footer-contact-title": "Contact",
+                "footer-copyright": "&copy; 2024 Responsible Fishing. All rights reserved."
+            },
+            es: {
+                "title": "Diciembre - Períodos de Veda",
+                "logo": "Pesca Responsable",
+                "nav-home": "Inicio",
+                "nav-about": "Sobre",
+                "nav-periods": "Períodos",
+                "nav-tips": "Consejos",
+                "breadcrumb-home": "Inicio",
+                "breadcrumb-month": "Diciembre",
+                "month-title": "Diciembre",
+                "month-subtitle": "Verano • Pico del período reproductivo",
+                "stats-species": "Especies en veda",
+                "stats-temp": "Temperatura media",
+                "fish-section-title": "Peces en Período de Veda",
+                "fish-name-anchova": "Anchoa",
+                "size-anchova": "43cm mín.",
+                "period-anchova": "Sep - Nov",
+                "description-anchova": "La anchoa (Pomatomus saltatrix) es una especie de gran importancia económica y ecológica en la costa brasileña. El período de veda para su reproducción, que generalmente ocurre entre septiembre y noviembre, finaliza en diciembre, por lo que la captura de la especie está liberada.",
+                "fish-name-robalo": "Robalo-blanco",
+                "size-robalo": "36cm mín.",
+                "period-robalo": "Abr - Jun",
+                "description-robalo": "El robalo-blanco (Centropomus undecimalis) es una de las especies más apreciadas en la costa brasileña, tanto en la pesca deportiva como en la culinaria. Su período de veda en algunas regiones ocurre entre abril y junio. Sin embargo, es crucial verificar las regulaciones locales, que pueden variar según el estado o la cuenca hidrográfica.",
+                "tips-section-title": "Consejos para Diciembre",
+                "tip-title-1": "Pico de la Veda",
+                "tip-text-1": "Diciembre es el pico de la veda para varias especies de agua dulce. Preste especial atención a las restricciones.",
+                "tip-title-2": "Temperaturas Altas",
+                "tip-text-2": "El calor intenso y las lluvias favorecen la reproducción. Pesque en las primeras horas de la mañana y evite el sol fuerte.",
+                "tip-title-3": "Reproducción Activa",
+                "tip-text-3": "Muchas especies están en su fase reproductiva. Evite las áreas de desove, como orillas de ríos y lagunas.",
+                "tip-title-4": "Pocas Opciones",
+                "tip-text-4": "Concéntrese en especies no migratorias como el tucunaré y la traíra, que pueden estar permitidas.",
+                "footer-logo": "Pesca Responsable",
+                "footer-motto": "Protegiendo los recursos pesqueros para las futuras generaciones.",
+                "footer-links-title": "Enlaces Útiles",
+                "footer-link-home": "Inicio",
+                "footer-link-about": "Sobre",
+                "footer-link-periods": "Períodos",
+                "footer-link-tips": "Consejos",
+                "footer-contact-title": "Contacto",
+                "footer-copyright": "&copy; 2024 Pesca Responsable. Todos los derechos reservados."
+            }
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                langButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const newLang = button.getAttribute('data-lang');
+                document.documentElement.lang = newLang;
+
+                const langData = translations[newLang];
+
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (langData[key]) {
+                        element.innerHTML = langData[key];
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
